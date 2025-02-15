@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import HomeContainer from '../components/VideoContainer/HomeContainer';
+import React from 'react';
+import ContattiContainer from '../components/Contatti/ContattiContainer';
 
-export default function Home() {
+export default function Servizi() {
     return (
         <>
             <Head>
-                <title>Home - Sito Agenzia</title>
+                <title>Servizi - Sito Agenzia</title>
                 <meta name="description" content="Sito vetrina per la mia agenzia web" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
-            <HomeContainer />
+            <ContattiContainer />
         </>
     );
 }

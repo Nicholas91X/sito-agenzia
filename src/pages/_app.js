@@ -2,6 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import "leaflet/dist/leaflet.css";
 
 export default function MyApp({ Component, pageProps }) {
     const theme = createTheme({
