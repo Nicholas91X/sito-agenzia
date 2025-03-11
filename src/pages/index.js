@@ -1,5 +1,5 @@
+import HomeContainer from '@/containers/HomeContainer';
 import Head from 'next/head';
-import HomeContainer from '../components/VideoContainer/HomeContainer';
 
 export default function Home() {
     return (

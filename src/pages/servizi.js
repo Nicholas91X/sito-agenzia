@@ -1,6 +1,6 @@
+import ServiziContainer from '@/containers/ServiziContainer';
 import Head from 'next/head';
 import React from 'react';
-import ServiziContainer from '../components/Servizi/ServiziContainer';
 
 export default function Servizi() {
     return (

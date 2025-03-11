@@ -1,12 +1,12 @@
+import ContattiContainer from '@/containers/ContattiContainer';
 import Head from 'next/head';
 import React from 'react';
-import ContattiContainer from '../components/Contatti/ContattiContainer';
 
-export default function Servizi() {
+export default function Contatti() {
     return (
         <>
             <Head>
-                <title>Servizi - Sito Agenzia</title>
+                <title>Contatti - Sito Agenzia</title>
                 <meta name="description" content="Sito vetrina per la mia agenzia web" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>

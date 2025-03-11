@@ -1,6 +1,6 @@
+import ChiSiamoContainer from '@/containers/ChiSiamoContainer';
 import Head from 'next/head';
 import React from 'react';
-import ChiSiamoContainer from '../components/ChiSiamo/ChiSiamoContainer';
 
 export default function ChiSiamo() {
     return (
