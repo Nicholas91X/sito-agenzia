@@ -22,6 +22,7 @@ export default function Navbar() {
         { name: "Chi Siamo", path: "/chi-siamo" },
         { name: "Servizi", path: "/servizi" },
         { name: "Contatti", path: "/contatti" },
+        { name: "Quiz", path: "/quiz" },
     ];
 
     // Imposta il menu attivo in base all'URL
