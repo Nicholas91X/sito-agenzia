@@ -78,8 +78,8 @@ export default function Navbar() {
                                             <StyledMenuButton
                                                 color="inherit"
                                                 active={activeMenu === item.name ? 1 : 0}
-                                                path={router.pathname.includes("chi-siamo") || router.pathname.includes("servizi")}
-                                                onClick={() => {
+                                                path={router.pathname.includes("chi-siamo") || router.pathname.includes("servizi") || router.pathname.includes("quiz")}
+                                                onClick={() => { 
                                                     setActiveMenu(item.name);
                                                     router.push(item.path);
                                                 }}

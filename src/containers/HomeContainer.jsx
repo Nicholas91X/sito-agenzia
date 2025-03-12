@@ -10,6 +10,7 @@ import { Typography } from '@mui/material';
 import Navbar from '@/components/Navbar copy/Navbar';
 import HoverPreviewItem from '@/components/HoverPreview/HoverPreview';
 import { AnotherBoxVideo, BoxUnderRow, BoxUnderVideoSection, CircleArrowHorizontal, UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
+import Link from 'next/link';
 
 export default function HomeContainer() {
     const mainVideoRef = useRef(null);
@@ -109,7 +110,9 @@ export default function HomeContainer() {
                         <Typography variant="h4" sx={{ textDecoration: 'underline' }}>
                             SERVIZI IN DETTAGLIO
                         </Typography>
-                        <CircleArrowHorizontal />
+                        <Link href="/servizi" passHref>
+                            <CircleArrowHorizontal />
+                        </Link>
                     </BoxUnderRow>
                 </BoxUnderVideoSection>
 
@@ -125,7 +128,9 @@ export default function HomeContainer() {
                         <Typography variant="h4" sx={{ textDecoration: 'underline' }}>
                             VAI AL QUIZ
                         </Typography>
-                        <CircleArrowHorizontal />
+                        <Link href="/quiz" passHref>
+                            <CircleArrowHorizontal />
+                        </Link>
                     </BoxUnderRow>
                 </BoxUnderVideoSection>
             </UnderVideoSection>

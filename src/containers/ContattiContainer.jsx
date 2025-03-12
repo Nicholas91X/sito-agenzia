@@ -15,6 +15,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
 
 export default function ContattiContainer() {
     const theme = useTheme();
@@ -276,13 +277,46 @@ export default function ContattiContainer() {
                 </Box>
             </UnderVideoSection>
 
-            {/* TERZO BLOCCO: FORM */}
+            {/* TERZO BLOCCO: CALENDLY */}
+            <UnderVideoSection sx={{
+                paddingTop: '4rem',
+                paddingBottom: '4rem',
+                backgroundColor: '#000',
+                color: '#fff',
+            }}>
+                <Box
+                    sx={{
+                        width: '100%',
+                        maxWidth: 800,
+                        mx: 'auto',
+                        py: 4,
+                        px: { xs: 2, sm: 4 },
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }}
+                >
+                    <Typography
+                        variant="h5"
+                        sx={{
+                            mb: 4,
+                            textAlign: 'center',
+                            fontFamily: 'Tan Pearl',
+                            fontSize: { xs: '1.5rem', md: '2rem' },
+                        }}
+                    >
+                        Prenota una call
+                    </Typography>
+                </Box>
+                <CalendlyEmbed style={{ minWidth: '200px' }} />
+            </UnderVideoSection>
+
+            {/* QUARTO BLOCCO: FORM */}
             <UnderVideoSection
                 sx={{
                     paddingTop: '4rem',
                     paddingBottom: '4rem',
-                    backgroundColor: '#000',
-                    color: '#fff',
+                    backgroundColor: '#fff',
+                    color: '#000',
                 }}
             >
                 <Box
@@ -301,7 +335,8 @@ export default function ContattiContainer() {
                             marginBottom: '2rem',
                             padding: '2rem',
                             width: '100%',
-                            backgroundColor: '#fff',
+                                maxWidth: '300px',
+                            backgroundColor: '#000',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
                             borderRadius: '8px',
                         }}
@@ -313,7 +348,7 @@ export default function ContattiContainer() {
                                 mb: 4,
                                 textAlign: 'center',
                                 fontFamily: 'Tan Pearl',
-                                color: '#000',
+                                color: '#fff',
                                 fontSize: { xs: '1rem', sm: '1.2rem' },
                             }}
                         >
@@ -327,7 +362,7 @@ export default function ContattiContainer() {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 gap: '1.5rem',
-                                fontFamily: 'Tan Pearl',
+                                fontFamily: 'Tan Pearl'
                             }}
                             onSubmit={(e) => {
                                 e.preventDefault();
@@ -343,9 +378,11 @@ export default function ContattiContainer() {
                                     // Riduci la grandezza del label e del testo interno
                                     '& .MuiInputBase-input': {
                                         fontSize: '0.9rem',
+                                        border: '1px solid #fff'
                                     },
                                     '& .MuiInputLabel-root': {
                                         fontSize: '0.85rem',
+                                        color: '#fff'
                                     },
                                 }}
                             />
@@ -357,9 +394,11 @@ export default function ContattiContainer() {
                                     fontFamily: 'inherit',
                                     '& .MuiInputBase-input': {
                                         fontSize: '0.9rem',
+                                        border: '1px solid #fff'
                                     },
                                     '& .MuiInputLabel-root': {
                                         fontSize: '0.85rem',
+                                        color: '#fff'
                                     },
                                 }}
                             />
@@ -373,9 +412,14 @@ export default function ContattiContainer() {
                                     fontFamily: 'inherit',
                                     '& .MuiInputBase-input': {
                                         fontSize: '0.9rem',
+                                        border: '1px solid #fff'
+                                    },
+                                    '& .MuiInputBase-root': {
+                                        padding: 0
                                     },
                                     '& .MuiInputLabel-root': {
                                         fontSize: '0.85rem',
+                                        color: '#fff'
                                     },
                                 }}
                             />

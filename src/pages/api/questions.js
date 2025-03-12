@@ -3,8 +3,7 @@ export default function handler(req, res) {
         {
             id: 1,
             question: "Da quanto tempo la tua azienda opera sul mercato?",
-            options: ["Meno di 5 anni", "5 - 10 anni", "Più di 10 anni"],
-            // campo "correct" omesso
+            options: ["Più di 10 anni", "5 - 10 anni", "Meno di 5 anni"],
         },
         {
             id: 2,
@@ -14,7 +13,7 @@ export default function handler(req, res) {
         {
             id: 3,
             question: "Utilizzi strumenti di analisi (come Google Analytics) per monitorare i risultati delle tue attività online?",
-            options: ["Si, li utilizzo regolarmente", "li uso occasionalmente", "No, non li utilizzo"],
+            options: ["Si, li utilizzo regolarmente", "Li uso occasionalmente", "No, non li utilizzo"],
         },
         {
             id: 4,

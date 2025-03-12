@@ -7,7 +7,7 @@ export default function handler(req, res) {
             {
                 id: 1,
                 question: "Da quanto tempo la tua azienda opera sul mercato?",
-                options: ["Meno di 5 anni", "5 - 10 anni", "Più di 10 anni"],
+                options: ["Più di 10 anni", "5 - 10 anni", "Meno di 5 anni"],
             },
             {
                 id: 2,
@@ -48,9 +48,9 @@ export default function handler(req, res) {
 
         quizQuestions.forEach((q) => {
             const userAnswer = answers[q.id];
-            // Calcola il punteggio in base all'indice dell'opzione selezionata (1 per il primo, 2 per il secondo, 3 per il terzo)
+            // Calcola il punteggio: 3 per la prima opzione, 2 per la seconda e 1 per la terza
             const answerIndex = q.options.findIndex(option => option === userAnswer);
-            const answerScore = answerIndex !== -1 ? answerIndex + 1 : 0;
+            const answerScore = answerIndex !== -1 ? 3 - answerIndex : 0;
             totalScore += answerScore;
 
             detailedResults.push({

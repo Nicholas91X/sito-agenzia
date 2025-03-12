@@ -11,7 +11,7 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
 
     return (
         <Paper elevation={3} sx={{ p: 2, mb: 2, backgroundColor: '#f9f9f9' }}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h4" gutterBottom sx={{ paddingBottom: '1rem', lineHeight: '1.3rem' }}>
                 {questionData.question}
             </Typography>
             <RadioGroup
@@ -24,7 +24,12 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
                         key={index}
                         value={option}
                         control={<Radio />}
-                        label={option}
+                        label={
+                            <Typography variant="body3" sx={{ paddingBottom: '0.5rem' }}>
+                                {option}
+                            </Typography>
+                        }
+                        sx={{ display: 'flex', alignItems: 'flex-end' }}
                     />
                 ))}
             </RadioGroup>

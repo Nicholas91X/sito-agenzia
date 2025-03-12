@@ -66,7 +66,8 @@ export default function ChiSiamoContainer() {
 
 
             <UnderVideoSection sx={{ paddingBottom: '10rem', backgroundColor: '#000', paddingTop: '15rem' }}>
-                <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>                    <SectionText sx={{ marginTop: '5rem', textAlign: 'left', color: 'white' }} variant='body2'>Noi ti offriamo una soluzione completa e semplice, perché crediamo che il digitale debba essere uno strumento di crescita, non un ostacolo.</SectionText>
+                <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>  
+                    <SectionText sx={{ marginTop: '5rem', textAlign: 'left', color: 'white' }} variant='body2'>Noi ti offriamo una soluzione completa e semplice, perché crediamo che il digitale debba essere uno strumento di crescita, non un ostacolo.</SectionText>
                 </BoxUnderVideoSection>
             </UnderVideoSection>
             {/* Grid con 4 colonne: su schermi piccoli le Box vanno in colonna, su md in 2 colonne e già in lg disponibili 2 a 2 */}
