@@ -66,7 +66,7 @@ export default function HomeContainer() {
        */}
             <VideoHero
                 videoRef={mainVideoRef}
-                videoSrc="/assets/videos/video_HERO.mp4"
+                videoSrc="/assets/videos/mockup_6.mp4"
                 titleText="Welcome Into Digital Era"
                 onScrollDown={handleScrollDown}
             />

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Container, Typography, Button, Box } from '@mui/material';
-import QuestionCard from '../components/QuestionCard';
-import QuizResults from '../components/QuizResults';
+import QuestionCard from '../components/Quiz/QuestionCard';
+import QuizResults from '../components/Quiz/QuizResults';
 import { UnderVideoSection } from '@/components/Commons/CommonsComponents';
 import Navbar from '@/components/Navbar copy/Navbar';
 import { motion } from 'framer-motion';
