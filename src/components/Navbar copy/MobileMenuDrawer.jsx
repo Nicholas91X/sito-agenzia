@@ -25,7 +25,7 @@ export default function MobileMenuDrawer({ open, onClose, menuItems, activeMenu,
                 {menuItems.map((item) => (
                     <StyledButton
                         key={item.name}
-                        active={activeMenu === item.name}
+                        active={activeMenu === item.name ? 'true' : 'false'}
                         onClick={() => {
                             setActiveMenu(item.name);
                             router.push(item.path);

@@ -8,7 +8,7 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
 }));
 
-export const StyledMenuButton = styled(Button)(({ theme, active, path }) => ({
+export const StyledMenuButton = styled(Button)(({ theme, active, pathboolean }) => ({
     position: 'relative',
     transition: 'transform 0.3s ease, color 0.3s ease',
     textTransform: 'none',
@@ -17,13 +17,13 @@ export const StyledMenuButton = styled(Button)(({ theme, active, path }) => ({
     [theme.breakpoints.down('lg')]: {
         fontSize: '0.7rem',
     },
-    color: path ? theme.palette.primary.main : theme.palette.primary.other,
+    color: pathboolean = 'true' ? theme.palette.primary.main : theme.palette.primary.other,
     '&:hover': {
         transform: 'scale(1.05)',
-        color: path ? theme.palette.primary.other : theme.palette.secondary.third,
+        color: pathboolean = 'true' ? theme.palette.primary.other : theme.palette.secondary.third,
     },
-    ...(active && {
-        color: path ? theme.palette.primary.other : theme.palette.secondary.third,
+    ...((active === 'true') && {
+        color: pathboolean = 'true' ? theme.palette.primary.other : theme.palette.secondary.third,
         '&::after': {
             content: '""',
             position: 'absolute',
@@ -31,7 +31,7 @@ export const StyledMenuButton = styled(Button)(({ theme, active, path }) => ({
             left: 0,
             width: '100%',
             height: '2px',
-            backgroundColor: path ? theme.palette.primary.other : theme.palette.secondary.third,
+            backgroundColor: pathboolean = 'true' ? theme.palette.primary.other : theme.palette.secondary.third,
         },
     }),
 }));

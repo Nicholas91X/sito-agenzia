@@ -77,8 +77,8 @@ export default function Navbar() {
                                         <motion.div key={item.name}>
                                             <StyledMenuButton
                                                 color="inherit"
-                                                active={activeMenu === item.name ? 1 : 0}
-                                                path={router.pathname.includes("chi-siamo") || router.pathname.includes("servizi") || router.pathname.includes("quiz")}
+                                                active={activeMenu === item.name ? 'true' : 'false'}
+                                                pathboolean={(router.pathname.includes("chi-siamo") || router.pathname.includes("servizi") || router.pathname.includes("quiz")) ? 'true' : 'false'}
                                                 onClick={() => { 
                                                     setActiveMenu(item.name);
                                                     router.push(item.path);

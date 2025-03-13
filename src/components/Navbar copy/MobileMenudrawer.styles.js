@@ -27,7 +27,7 @@ export const StyledButton = styled(Button)(({ theme, active }) => ({
     '&:hover': {
         transform: 'scale(1.05)',
     },
-    ...(active && {
+    ...((active === 'true') && {
         borderLeft: '4px solid',
         borderLeftColor: theme.palette.secondary.other,
         color: theme.palette.secondary.other,

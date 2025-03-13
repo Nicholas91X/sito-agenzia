@@ -29,7 +29,7 @@ export const FooterOverlay = styled(Box)(({ theme }) => ({
 
 export const FooterContent = styled(Box)(({ theme }) => ({
     position: 'absolute',
-    top: 0,
+    bottom: -10,
     left: 0,
     width: '100%',
     height: '100%',

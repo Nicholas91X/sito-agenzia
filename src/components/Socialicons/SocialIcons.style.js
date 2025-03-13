@@ -3,7 +3,7 @@ import { IconButton, Box } from '@mui/material';
 
 export const SocialIconsContainer = styled(Box)({
     position: 'absolute',
-    bottom: '5%',
+    bottom: '0%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     display: 'flex',
