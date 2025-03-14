@@ -3,7 +3,7 @@ import { Container, Typography, Button, Box } from '@mui/material';
 import QuestionCard from '../components/Quiz/QuestionCard';
 import QuizResults from '../components/Quiz/QuizResults';
 import { UnderVideoSection } from '@/components/Commons/CommonsComponents';
-import Navbar from '@/components/Navbar copy/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import { motion } from 'framer-motion';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
@@ -116,7 +116,7 @@ const QuizPage = () => {
                         lg: '4rem 15rem',
                         xl: '4rem 25rem',
                     },
-                    backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
+                    backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -129,31 +129,75 @@ const QuizPage = () => {
                         sx={{
                             textAlign: 'center',
                             paddingBottom: {
-                                xs: '1rem',
-                                sm: '2rem',
-                                md: '3rem',
-                                lg: '4rem',
+                                xs: '1.5rem',
+                                sm: '2.5rem',
+                                md: '3.5rem',
+                                lg: '4.5rem',
                             },
                         }}
                     >
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}
-                        >
-                            <motion.div
-                                initial={{ x: -100, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                transition={{ delay: 1, duration: 2 }}
-                            >
-                                <HelpOutlineIcon sx={{ fontSize: '2.5rem', mb: 2 }} />
-                            </motion.div>
-                            Quiz sul Livello Digitale
-                        </Box>
+                        Benvenuto/a!
                     </Typography>
+                    <Typography
+                        variant="body2"
+                        gutterBottom
+                        sx={{
+                            textAlign: 'center',
+                            paddingBottom: {
+                                xs: '1.5rem',
+                                sm: '2.5rem',
+                                md: '3.5rem',
+                                lg: '4.5rem',
+                            },
+                        }}
+                    >
+                        Rispondi a{' '}
+                        <motion.span
+                            initial={{ x: 200, scale: 0, opacity: 0 }}
+                            animate={{ x: 0, scale: 1, opacity: 1 }}
+                            transition={{ delay: 1.5, duration: 1 }}
+                            style={{ display: 'inline-block', verticalAlign: 'middle' }}
+                        >
+                            <Box
+                                component="span"
+                                sx={{
+                                    display: 'inline-block',
+                                    backgroundColor: '#fff',
+                                    border: '1px solid #000',
+                                    padding: '0.2rem 0.5rem',
+                                    fontFamily: 'Tan Pearl',
+                                    mx: '0.5rem',
+                                    verticalAlign: 'middle',
+                                }}
+                            >
+                                5
+                            </Box>
+                        </motion.span>
+                        brevi domande per scoprire il livello della tua presenza digitale per far crescere il tuo business online.
+                    </Typography>
+
+                    {/* Secondo blocco: variant h3 */}
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            paddingBottom: { xs: '2.5rem', sm: '2.5rem', lg: '5rem' }
+                        }}
+                    >
+                        <motion.div
+                            initial={{ x: -100, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 1, duration: 2 }}
+                            style={{ display: 'inline-block' }}
+                        >
+                            <HelpOutlineIcon sx={{ fontSize: '2.5rem', mb: 2 }} />
+                        </motion.div>
+                        <Typography variant="h3" gutterBottom sx={{ textAlign: 'center' }}>
+                            Quanto è forte la tua presenza online?
+                        </Typography>
+                    </Box>
                     {!submitted ? (
                         <>
                             {questions.map((q) => (

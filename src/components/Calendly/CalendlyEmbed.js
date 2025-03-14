@@ -27,7 +27,7 @@ const CalendlyEmbed = () => {
             <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/wide-digitagency"
-                style={{ height: '730px' }}
+                style={{ height: '730px', border: '1px solid black', backgroundColor: '#fff'  }}
             ></div>
         </>
     );

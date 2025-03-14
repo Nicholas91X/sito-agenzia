@@ -7,7 +7,7 @@ import VideoFooter from '../components/VideoFooter/VideoFooter';
 
 // Alcuni styled component ereditati (se vuoi) oppure puoi crearne di nuovi
 import { Typography } from '@mui/material';
-import Navbar from '@/components/Navbar copy/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import HoverPreviewItem from '@/components/HoverPreview/HoverPreview';
 import { AnotherBoxVideo, BoxUnderRow, BoxUnderVideoSection, CircleArrowHorizontal, UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
 import Link from 'next/link';
@@ -77,7 +77,7 @@ export default function HomeContainer() {
             <UnderVideoSection sx={{
                 padding: {
                     xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem',
-                    backgroundImage: "url('/assets/images/trama-definitiva-4.png')",
+                    backgroundImage: "url('/assets/images/trama-definitiva-4-min.png')",
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

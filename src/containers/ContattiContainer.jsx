@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import "leaflet/dist/leaflet.css";
-import Navbar from '@/components/Navbar copy/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import { useTheme } from '@emotion/react';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
@@ -333,7 +333,7 @@ export default function ContattiContainer() {
                 paddingTop: '4rem',
                 paddingBottom: '4rem',
                 color: '#fff',
-                backgroundImage: "url('/assets/images/trama-definitiva-2.png')",
+                backgroundImage: "url('/assets/images/trama-definitiva-2-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
@@ -371,7 +371,7 @@ export default function ContattiContainer() {
                     paddingBottom: '4rem',
                     backgroundColor: '#fff',
                     color: '#000',
-                    backgroundImage: "url('/assets/images/trama-definitiva-1.png')",
+                    backgroundImage: "url('/assets/images/trama-definitiva-1-min.png')",
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

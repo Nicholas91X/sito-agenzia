@@ -1,5 +1,5 @@
 import { Paper, Typography } from '@mui/material';
-import Navbar from '../Navbar copy/Navbar';
+import Navbar from '../Navbar/Navbar';
 import { UnderVideoSection } from '../Commons/CommonsComponents';
 import dynamic from 'next/dynamic';
 

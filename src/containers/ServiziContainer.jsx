@@ -5,7 +5,7 @@ import SocialIcon from '@mui/icons-material/Share';
 import WebIcon from '@mui/icons-material/Web';
 import PhotoVideoIcon from '@mui/icons-material/PhotoCamera';
 import ConsultIcon from '@mui/icons-material/SupportAgent';
-import Navbar from '@/components/Navbar copy/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import { UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
@@ -153,7 +153,7 @@ export default function ServicesTimeline() {
 
             <UnderVideoSection sx={{
                 paddingTop: '6rem', paddingBottom: '4rem',
-                backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
+                backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',

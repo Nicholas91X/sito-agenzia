@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import useAutoplayVideos from '../hooks/useAutoplayVideos';
 import VideoFooter from '../components/VideoFooter/VideoFooter';
-import Navbar from '@/components/Navbar copy/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import { BoxUnderVideoSection, UnderVideoSection } from '@/components/Commons/CommonsComponents';
 import { SectionText, SectionTitle } from '@/components/VideoContainer/VideoContainer.styles';
 import { Box } from '@mui/material';
@@ -30,7 +30,7 @@ export default function ChiSiamoContainer() {
             <Navbar />
 
             {/* Corpo della pagina */}
-            <UnderVideoSection sx={{ paddingBottom: '20rem', backgroundImage: "url('/assets/images/trama.webp')" }}>
+            <UnderVideoSection sx={{ paddingBottom: '20rem', backgroundImage: "url('/assets/images/trama-definitiva-4-min.png')" }}>
                 <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>
                     <SectionTitle sx={{ paddingTop: { xs: '5rem' } }}>Chi Siamo</SectionTitle>
                     <SectionText sx={{ textAlign: 'left', color: '#000' }}>Non siamo un’agenzia tradizionale, ma un <strong>gruppo di liberi professionisti</strong> che ha scelto di collaborare in un contesto di piena responsabilità individuale e reputazione personale.</SectionText>
@@ -54,7 +54,7 @@ export default function ChiSiamoContainer() {
                 }}
             >
                 <video
-                    src="/assets/videos/mockup.mp4"
+                    src="/assets/videos/video_chi_siamo.mp4"
                     autoPlay
                     loop
                     muted
@@ -79,7 +79,7 @@ export default function ChiSiamoContainer() {
             {/* Grid con 4 colonne: su schermi piccoli le Box vanno in colonna, su md in 2 colonne e già in lg disponibili 2 a 2 */}
             <UnderVideoSection sx={{
                 paddingBottom: '10rem',
-                backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
+                backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
