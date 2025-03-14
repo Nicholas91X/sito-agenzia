@@ -74,18 +74,46 @@ export default function HomeContainer() {
             {/**
        * Sezione contenuti
        */}
-            <UnderVideoSection sx={{ padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+            <UnderVideoSection sx={{
+                padding: {
+                    xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem',
+                    backgroundImage: "url('/assets/images/trama-definitiva-4.png')",
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                }
+            }}>
                 <BoxUnderVideoSection>
                     <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
                         Cosa facciamo
                     </Typography>
                     <Typography variant="body2">
-                        Welcome to <strong>Wide</strong>: Acceleriamo il successo digitale delle PMI e dei liberi professionisti tra  La Spezia, Massa e Carrara.
+                        Gestire la tua attività è già una sfida, trovare clienti online non dovrebbe esserlo.
                     </Typography>
-                    <VerticalLine />
+                    <Typography variant="body2">
+                        Noi vogliamo renderti tutto più semplice.
+                    </Typography>
+                    <Typography variant="body2">
+                        Noi di <strong>Wide aiutiamo le aziende e i liberi professionisti di La Spezia, Massa e Carrara</strong> a ottenere risultati concreti online, trasformando i canali digitali in un'opportunità concreta.
+                    </Typography>
+                    <Typography variant="body2">
+                        Creiamo strategie su misura per <strong>aumentare la tua visibilità, attrarre clienti e rafforzare la tua reputazione.</strong>
+                    </Typography>
                 </BoxUnderVideoSection>
 
                 <BoxUnderVideoSection>
+                    <BoxUnderRow>
+                        <Typography variant="h4" sx={{ textDecoration: 'underline' }}>
+                            PRENOTA UNA CONSULENZA GRATUITA
+                        </Typography>
+                        <Link href="/contatti" passHref>
+                            <CircleArrowHorizontal />
+                        </Link>
+                    </BoxUnderRow>
+                </BoxUnderVideoSection>
+
+                <BoxUnderVideoSection>
+                    <VerticalLine />
                     <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
                         I nostri servizi
                     </Typography>

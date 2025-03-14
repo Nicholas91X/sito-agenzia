@@ -102,13 +102,13 @@ let theme = createTheme({
             fontFamily: "Inter, sans-serif",
             fontSize: "0.9rem",
             [baseTheme.breakpoints.up("sm")]: {
-                fontSize: "0.9rem",
+                fontSize: "1rem",
             },
             [baseTheme.breakpoints.up("md")]: {
-                fontSize: "0.9rem",
+                fontSize: "1.1rem",
             },
             [baseTheme.breakpoints.up("lg")]: {
-                fontSize: "1.1rem",
+                fontSize: "1.2rem",
             },
             fontWeight: 200,
         },

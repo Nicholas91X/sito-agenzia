@@ -116,7 +116,7 @@ const QuizPage = () => {
                         lg: '4rem 15rem',
                         xl: '4rem 25rem',
                     },
-                    backgroundImage: "url('/assets/images/trama-servizi-2.webp')",
+                    backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

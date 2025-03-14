@@ -11,41 +11,43 @@ import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import TimelineStep from '@/components/VideoContainer/TimelineStep';
 import VideoHero from '@/components/VideoHero/VideoHero';
+import { QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+
 
 const timelineSteps = [
     {
         title: "Digital Marketing",
         summary: "Strategie personalizzate che aumentano la tua visibilità online.",
         details:
-            "Dimentica i tecnicismi: noi ti guidiamo passo dopo passo, sostituendo metodi tradizionali inefficaci con un approccio chiaro e pianificato.",
+            "Ti aiutiamo a raggiungere i clienti giusti con strategie digitali mirate che aumentano la tua visibilità, facendoti trovare da chi conta davvero.",
         icon: <DigitalIcon sx={{ fontSize: '1.5rem', color: 'secondary.other' }} />,
     },
     {
         title: "Social Media Marketing",
         summary: "Costruiamo e gestiamo una presenza social moderna per valorizzare il tuo brand.",
         details:
-            "Creiamo contenuti coinvolgenti e monitoriamo i risultati in modo trasparente, per farti sembrare sempre al passo coi tempi.",
+            "Creiamo per te una presenza social coinvolgente, capace di catturare l’interesse del tuo pubblico e trasformarlo in clienti reali.",
         icon: <SocialIcon sx={{ fontSize: '1.5rem', color: 'secondary.other' }} />,
     },
     {
         title: "Creazione Siti Web",
         summary: "Realizziamo siti web moderni, funzionali e curati nei dettagli.",
         details:
-            "Un design professionale che rafforza la tua immagine e semplifica l’esperienza online, trasformando i visitatori in clienti.",
+            "Realizziamo il tuo sito web per mostrare la tua professionalità e trasformare i visitatori in contatti reali.",
         icon: <WebIcon sx={{ fontSize: '1.5rem', color: 'secondary.other' }} />,
     },
     {
         title: "Foto e Video Professionali",
         summary: "Contenuti visivi di alta qualità per raccontare la tua storia.",
         details:
-            "Immagini e video che catturano l’attenzione e comunicano professionalità in modo autentico.",
+            "Ti aiutiamo a mostrare la tua unicità con immagini e video d’impatto che emozionano e restano impressi nella memoria del tuo cliente.",
         icon: <PhotoVideoIcon sx={{ fontSize: '1.5rem', color: 'secondary.other' }} />,
     },
     {
         title: "Consulenza e Ottimizzazione",
         summary: "Supporto costante per migliorare i tuoi strumenti digitali.",
         details:
-            "Ti accompagniamo nella scelta delle migliori strategie, fornendoti chiarezza e un approccio strutturato per pianificare il tuo futuro online.",
+            "Ti offriamo supporto costante e consulenza personalizzata, accompagnandoti passo dopo passo verso obiettivi concreti e misurabili.",
         icon: <ConsultIcon sx={{ fontSize: '1.5rem', color: 'secondary.other' }} />,
     },
 ];
@@ -87,24 +89,78 @@ export default function ServicesTimeline() {
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
-                            I nostri Servizi
+                            Servizio All-inclusive
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Noi di  Wide sappiamo che il mondo digitale può generare confusione e frustrazione.
+                            Consapevoli che il marketing digitale richieda sia competenze tecniche sia tempo, offriamo una gestione chiavi in mano di tutto il processo.
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Molti imprenditori locali si sentono sopraffatti da metriche incomprensibili e hanno già sprecato budget in soluzioni inefficaci.
-                        </Typography>
+                            Delegare ogni fase ti fa risparmiare tempo e stress, offrendoti massima coerenza nella comunicazione del tuo brand.                        </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Noi trasformiamo queste sfide in opportunità, offrendo servizi studiati per creare le condizioni ideali per la crescita del tuo business.
+                            Con una regia unitaria, la tua attività ottiene maggiore visibilità e risultati tangibili.
                         </Typography>
                     </Box>
                 </Box>
             </UnderVideoSection>
-            <UnderVideoSection sx={{ paddingTop: '6rem', paddingBottom: '4rem' }}>
+
+            <UnderVideoSection sx={{ position: 'relative', paddingTop: '4rem', backgroundColor: '#fff', color: '#000' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
+                            Risultati Misurabili
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Il digital marketing non è più un costo, ma un investimento tracciabile.
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Con KPI chiari, report dettagliati e analisi precise, ti dimostriamo il valore di ogni euro investito.
+                        </Typography>
+                    </Box>
+                </Box>
+
+                {/* Box della citazione posizionato esattamente a metà */}
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: '0',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '90%',
+                        maxWidth: 1000,
+                        zIndex: 2,
+                    }}
+                >
+                    <QuoteBox elevation={0}>
+                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
+                            "Non si tratta solo di essere online, ma di farlo nel modo giusto."
+                        </Typography>
+                    </QuoteBox>
+                </Box>
+            </UnderVideoSection>
+
+            <UnderVideoSection sx={{ paddingTop: '4rem', backgroundColor: '#000', color: '#fff' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
+                            Tecnologia Innovativa, Servizio Affidabile
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Il digitale evolve rapidamente, noi con lui. Ti offriamo soluzioni innovative e all'avanguardia, frutto di costante aggiornamento e passione per il settore. Un team affidabile e competente al tuo fianco, per un futuro digitale solido e di successo.
+                        </Typography>
+                    </Box>
+                </Box>
+            </UnderVideoSection>
+
+            <UnderVideoSection sx={{
+                paddingTop: '6rem', paddingBottom: '4rem',
+                backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+            }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
                     {/* Titolo principale */}
-                    <Box sx={{ marginBottom: {sm: '2rem', lg: '4rem'}, width: '100%' }}>
+                    <Box sx={{ marginBottom: { sm: '2rem', lg: '4rem' }, width: '100%' }}>
                         <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
                             Il Sentiero del Successo
                         </Typography>

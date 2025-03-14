@@ -45,7 +45,7 @@ const TimelineStep = ({ step }) => {
                                 exit={{ opacity: 0, height: 0 }}
                                 transition={{ duration: 1.5 }}
                             >
-                                <Typography variant="body3" sx={{ mt: 2 }}>
+                                <Typography  sx={{ mt: 2, fontSize: { xs: '0.8rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', } }}>
                                     {step.details}
                                 </Typography>
                             </motion.div>

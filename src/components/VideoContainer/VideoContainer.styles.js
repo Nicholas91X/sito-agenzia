@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 export const StyledBox = styled(Box)(({ theme }) => ({
@@ -400,4 +400,16 @@ export const ImageContainer = styled(Box)(({ theme }) => ({
         height: 'auto',
         objectFit: 'cover',
     }
+}));
+
+export const QuoteBox = styled(Paper)(({ theme }) => ({
+    padding: theme.spacing(2),
+    margin: theme.spacing(2, 0),
+    backgroundColor: theme.palette.secondary.fourth,
+    fontStyle: 'italic',
+    color: theme.palette.secondary.main,
+    borderTop: '2px solid white',   // bordo superiore bianco
+    borderBottom: '2px solid black', // bordo inferiore nero
+    borderLeft: '2px solid white',
+    borderRight: '2px solid black',
 }));

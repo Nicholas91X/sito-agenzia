@@ -16,6 +16,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
+import { QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
 
 export default function ContattiContainer() {
     const theme = useTheme();
@@ -81,10 +82,60 @@ export default function ContattiContainer() {
             <Navbar />
             <VideoHero
                 videoRef={mainVideoRef}
-                videoSrc="/assets/videos/mockup_3.mp4"
+                videoSrc="/assets/videos/video_contatti.mp4"
                 titleText="Contattaci"
                 onScrollDown={handleScrollDown}
             />
+
+            <UnderVideoSection sx={{ paddingTop: '4rem', backgroundColor: '#000', color: '#fff' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
+                            Conosciamoci
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Far crescere la tua attività sui social media e attirare nuovi clienti richiede tempo, competenze e una strategia mirata, ma ci occupiamo noi di tutto, offrendoti soluzioni su misura per ottenere risultati concreti.
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Delegare ogni fase ti fa risparmiare tempo e stress, offrendoti massima coerenza nella comunicazione del tuo brand.                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Con una regia unitaria, la tua attività ottiene maggiore visibilità e risultati tangibili.
+                        </Typography>
+                    </Box>
+                </Box>
+            </UnderVideoSection>
+
+            <UnderVideoSection sx={{ position: 'relative', paddingTop: '4rem', backgroundColor: '#fff', color: '#000' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Se vuoi scoprire come possiamo aiutarti, scrivici o prenota una consulenza gratuita: insieme costruiremo una strategia efficace per la tua crescita.
+                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                            Il tuo lavoro merita di essere conosciuto, e noi siamo qui per farlo arrivare alle persone giuste.
+                        </Typography>
+                    </Box>
+                </Box>
+
+                {/* Box della citazione posizionato esattamente a metà */}
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: '0',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '90%',
+                        maxWidth: 1000,
+                        zIndex: 2,
+                    }}
+                >
+                    <QuoteBox elevation={0}>
+                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
+                            "Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali."
+                        </Typography>
+                    </QuoteBox>
+                </Box>
+            </UnderVideoSection>
 
             {/* PRIMO BLOCCO: SOCIAL */}
             <UnderVideoSection
@@ -281,8 +332,11 @@ export default function ContattiContainer() {
             <UnderVideoSection sx={{
                 paddingTop: '4rem',
                 paddingBottom: '4rem',
-                backgroundColor: '#000',
                 color: '#fff',
+                backgroundImage: "url('/assets/images/trama-definitiva-2.png')",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
             }}>
                 <Box
                     sx={{
@@ -317,6 +371,10 @@ export default function ContattiContainer() {
                     paddingBottom: '4rem',
                     backgroundColor: '#fff',
                     color: '#000',
+                    backgroundImage: "url('/assets/images/trama-definitiva-1.png')",
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
                 }}
             >
                 <Box
@@ -335,7 +393,7 @@ export default function ContattiContainer() {
                             marginBottom: '2rem',
                             padding: '2rem',
                             width: '100%',
-                                maxWidth: '300px',
+                            maxWidth: '300px',
                             backgroundColor: '#000',
                             boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
                             borderRadius: '8px',

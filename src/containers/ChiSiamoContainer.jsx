@@ -32,8 +32,10 @@ export default function ChiSiamoContainer() {
             {/* Corpo della pagina */}
             <UnderVideoSection sx={{ paddingBottom: '20rem', backgroundImage: "url('/assets/images/trama.webp')" }}>
                 <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>
-                    <SectionTitle sx={{ paddingTop: { xs: '5rem' } }}>La nostra Missione</SectionTitle>
-                    <SectionText sx={{ textAlign: 'left', color: '#000' }}>Sappiamo che il <strong>mondo digitale</strong> può sembrare complicato: molti imprenditori vedono i concorrenti avere successo online mentre loro faticano a partire, si confondono con metriche tecniche e hanno già sprecato budget in soluzioni inefficaci.</SectionText>
+                    <SectionTitle sx={{ paddingTop: { xs: '5rem' } }}>Chi Siamo</SectionTitle>
+                    <SectionText sx={{ textAlign: 'left', color: '#000' }}>Non siamo un’agenzia tradizionale, ma un <strong>gruppo di liberi professionisti</strong> che ha scelto di collaborare in un contesto di piena responsabilità individuale e reputazione personale.</SectionText>
+                    <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: '#000' }}>Il nostro modello di lavoro ci permette di rispondere in prima persona a ogni esigenza: ogni progetto è curato con la massima attenzione, perché ogni professionista porta avanti il proprio impegno e la propria reputazione. Questo approccio garantisce che, in ogni collaborazione, il massimo impegno e la qualità siano al centro di tutto.</SectionText>
+                    <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: '#000' }}>Crediamo fermamente che il <strong>valore del territorio e la conoscenza profonda del contesto locale</strong> siano elementi imprescindibili per realizzare lavori di eccellenza.</SectionText>
                 </BoxUnderVideoSection>
             </UnderVideoSection>
 
@@ -66,12 +68,22 @@ export default function ChiSiamoContainer() {
 
 
             <UnderVideoSection sx={{ paddingBottom: '10rem', backgroundColor: '#000', paddingTop: '15rem' }}>
-                <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>  
-                    <SectionText sx={{ marginTop: '5rem', textAlign: 'left', color: 'white' }} variant='body2'>Noi ti offriamo una soluzione completa e semplice, perché crediamo che il digitale debba essere uno strumento di crescita, non un ostacolo.</SectionText>
+                <BoxUnderVideoSection sx={{ padding: { xs: '0 2rem', sm: '0 5rem', md: '0 15rem', lg: '0 15rem', xl: '0 25rem' } }}>
+                    <SectionTitle sx={{ paddingTop: { xs: '5rem' }, color: '#fff' }}>Cosa ci differenzia</SectionTitle>
+                    <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: 'white' }} variant='body2'>Preferiamo concentrarci su <strong>pochi, selezionati clienti</strong>, anziché puntare alla quantità. In questo modo, possiamo dedicare il giusto tempo e le risorse necessarie per <strong>garantire risultati che rispecchino le aspettative</strong> e la fiducia dei nostri partner.</SectionText>
+                    <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: 'white' }} variant='body2'>Se cercate un team che unisca professionalità, trasparenza e un forte legame con il territorio, siete nel posto giusto.</SectionText>
+                    <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: 'white' }} variant='body2'>Creiamo per te strategie di digital marketing personalizzate, ideali per sfruttare al meglio i canali social e il tuo sito web, per far crescere la tua attività.</SectionText>
+                    <SectionText sx={{ width: '100%', marginTop: '1rem', textAlign: 'left', color: 'white' }} variant='body2'><strong>Tu concentrati sulla tua attività. Al resto pensiamo noi.</strong></SectionText>
                 </BoxUnderVideoSection>
             </UnderVideoSection>
             {/* Grid con 4 colonne: su schermi piccoli le Box vanno in colonna, su md in 2 colonne e già in lg disponibili 2 a 2 */}
-            <UnderVideoSection sx={{ paddingBottom: '10rem' }}>
+            <UnderVideoSection sx={{
+                paddingBottom: '10rem',
+                backgroundImage: "url('/assets/images/trama-definitiva-3.png')",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+            }}>
                 <BoxUnderVideoSection
                     sx={{
                         width: { xs: '90%', md: '66%' },
