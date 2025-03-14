@@ -404,10 +404,10 @@ export const ImageContainer = styled(Box)(({ theme }) => ({
 
 export const QuoteBox = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(2),
-    margin: theme.spacing(2, 0),
+    margin: theme.spacing(2, 3),
     backgroundColor: theme.palette.secondary.fourth,
     fontStyle: 'italic',
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.other,
     borderTop: '2px solid white',   // bordo superiore bianco
     borderBottom: '2px solid black', // bordo inferiore nero
     borderLeft: '2px solid white',

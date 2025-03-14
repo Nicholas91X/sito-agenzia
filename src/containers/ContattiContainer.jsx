@@ -131,7 +131,7 @@ export default function ContattiContainer() {
                 >
                     <QuoteBox elevation={0}>
                         <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
-                            "Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali."
+                            -- "Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali." --
                         </Typography>
                     </QuoteBox>
                 </Box>

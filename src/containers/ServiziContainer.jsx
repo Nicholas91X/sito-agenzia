@@ -132,7 +132,7 @@ export default function ServicesTimeline() {
                 >
                     <QuoteBox elevation={0}>
                         <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
-                            "Non si tratta solo di essere online, ma di farlo nel modo giusto."
+                            -- "Non si tratta solo di essere online, ma di farlo nel modo giusto." --
                         </Typography>
                     </QuoteBox>
                 </Box>
