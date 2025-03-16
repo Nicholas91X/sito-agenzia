@@ -82,13 +82,13 @@ const QuizPage = () => {
                             lg: '4rem 15rem',
                             xl: '4rem 25rem',
                         },
-                        backgroundImage: "url('/assets/images/trama-servizi-2.webp')",
+                        backgroundImage: "url('/assets/images/trama-definitiva-2-min.png')",
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
                     }}
                 >
-                    <Container sx={{ p: 4, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <Container sx={{ p: 4, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
                         <Typography variant="h4" sx={{ marginBottom: '2rem' }}>Hai già effettuato il quiz</Typography>
                         <Typography variant="h5">
                             Risultato: {localStorage.getItem('score')} / {localStorage.getItem('total')}
@@ -116,10 +116,8 @@ const QuizPage = () => {
                         lg: '4rem 15rem',
                         xl: '4rem 25rem',
                     },
-                    backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
+                    backgroundColor: '#323738',
+                    color: '#fff'
                 }}
             >
                 <Container sx={{ p: 4 }}>
@@ -134,6 +132,7 @@ const QuizPage = () => {
                                 md: '3.5rem',
                                 lg: '4.5rem',
                             },
+                            color: '#FAE5C8'
                         }}
                     >
                         Benvenuto/a!
@@ -168,6 +167,7 @@ const QuizPage = () => {
                                     fontFamily: 'Tan Pearl',
                                     mx: '0.5rem',
                                     verticalAlign: 'middle',
+                                    color: '#000'
                                 }}
                             >
                                 5
@@ -192,7 +192,7 @@ const QuizPage = () => {
                             transition={{ delay: 1, duration: 2 }}
                             style={{ display: 'inline-block' }}
                         >
-                            <HelpOutlineIcon sx={{ fontSize: '2.5rem', mb: 2 }} />
+                            <HelpOutlineIcon sx={{ fontSize: '2.5rem', mb: 5, color: '#FAE5C8' }} />
                         </motion.div>
                         <Typography variant="h3" gutterBottom sx={{ textAlign: 'center' }}>
                             Quanto è forte la tua presenza online?
@@ -221,6 +221,7 @@ const QuizPage = () => {
                                     color="primary"
                                     onClick={handleClear}
                                     size="large"
+                                    sx={{ border: '1px solid white' }}
                                 >
                                     Reset
                                 </Button>

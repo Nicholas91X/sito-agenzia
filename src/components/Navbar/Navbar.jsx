@@ -53,6 +53,8 @@ export default function Navbar() {
         exit: { opacity: 0, scale: 0.8 },
     };
 
+    const currentPage = router.pathname === "/" ? "home" : router.pathname.replace("/", "");
+
     return (
         <StyledAppBar position="fixed">
             <Toolbar sx={{ position: 'relative', display: "flex", justifyContent: "flex-end", width: "100%", height: '10vh' }}>
@@ -78,8 +80,8 @@ export default function Navbar() {
                                             <StyledMenuButton
                                                 color="inherit"
                                                 active={activeMenu === item.name ? 'true' : 'false'}
-                                                pathboolean={(router.pathname.includes("chi-siamo") || router.pathname.includes("servizi") || router.pathname.includes("quiz")) ? 'true' : 'false'}
-                                                onClick={() => { 
+                                                page={currentPage} // Passiamo lo stesso valore a tutti i tab
+                                                onClick={() => {
                                                     setActiveMenu(item.name);
                                                     router.push(item.path);
                                                 }}

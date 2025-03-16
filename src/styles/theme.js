@@ -69,6 +69,14 @@ let theme = createTheme({
             fontSize: "0.75rem",
             fontWeight: 500,
         },
+        personal: {
+            fontFamily: "Inter, sans-serif",
+            fontSize: "1rem",
+            [baseTheme.breakpoints.up("xs")]: {
+                fontSize: "2rem",
+            },
+            fontWeight: 500,
+        },
 
         body1: {
             fontFamily: "Inter, sans-serif",

@@ -11,7 +11,12 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
     };
 
     return (
-        <Paper elevation={3} sx={{ p: 2, mb: 2, backgroundColor: '#f9f9f9' }}>
+        <Paper elevation={3} sx={{
+            padding: '3rem 2rem', mb: 2, backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+        }}>
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <motion.span
                     initial={{ x: 200, scale: 0, opacity: 0 }}
@@ -37,11 +42,11 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
                         {questionData.id}
                     </Box>
                 </motion.span>
-                <Typography variant="h6" gutterBottom sx={{ paddingBottom: '1rem' }}>
+                <Typography variant="h6" gutterBottom sx={{ padding: '2rem 0', fontFamily: 'Tan Pearl', }}>
                     <strong>{questionData.title}</strong>
                 </Typography>
             </Box>
-            <Typography variant="h4" gutterBottom sx={{ paddingBottom: '1rem', lineHeight: '1.5rem' }}>
+            <Typography variant="body2" sx={{ paddingBottom: '3rem' }}>
                 {questionData.question}
             </Typography>
             <RadioGroup
@@ -55,11 +60,10 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
                         value={option}
                         control={<Radio />}
                         label={
-                            <Typography variant="body3" sx={{ paddingBottom: '0.5rem' }}>
+                            <Typography variant="body3">
                                 {option}
                             </Typography>
                         }
-                        sx={{ display: 'flex', alignItems: 'flex-end' }}
                     />
                 ))}
             </RadioGroup>

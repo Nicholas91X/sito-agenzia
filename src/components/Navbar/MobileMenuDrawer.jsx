@@ -2,7 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { StyledBox, StyledButton, StyledDrawer, StyledLogoContainer, StyledLogoImage } from './MobileMenudrawer.styles';
 import { Box } from '@mui/material';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -39,7 +38,6 @@ export default function MobileMenuDrawer({ open, onClose, menuItems, activeMenu,
 
             {/* SOCIAL ICONS */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0.1, sm: 0.5 } }}>
-                <SocialIconButton color="secondary"><YouTubeIcon /></SocialIconButton>
                 <SocialIconButton color="secondary"><LinkedInIcon /></SocialIconButton>
                 <SocialIconButton color="secondary"><InstagramIcon /></SocialIconButton>
                 <SocialIconButton color="secondary"><FacebookIcon /></SocialIconButton>

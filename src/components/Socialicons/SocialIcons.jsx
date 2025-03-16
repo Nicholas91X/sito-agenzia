@@ -5,7 +5,6 @@ import {
 } from './SocialIcons.style';
 
 // Icone Material UI
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -18,7 +17,6 @@ import PhoneIcon from '@mui/icons-material/Phone';
 export default function SocialIcons() {
     return (
         <SocialIconsContainer>
-            <SocialIconButton color="secondary"><YouTubeIcon /></SocialIconButton>
             <SocialIconButton color="secondary"><LinkedInIcon /></SocialIconButton>
             <SocialIconButton color="secondary"><InstagramIcon /></SocialIconButton>
             <SocialIconButton color="secondary"><FacebookIcon /></SocialIconButton>

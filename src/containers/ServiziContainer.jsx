@@ -85,7 +85,7 @@ export default function ServicesTimeline() {
                 onScrollDown={handleScrollDown}
             />
 
-            <UnderVideoSection sx={{ paddingTop: '4rem', backgroundColor: '#000', color: '#fff' }}>
+            <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem', }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
@@ -103,7 +103,7 @@ export default function ServicesTimeline() {
                 </Box>
             </UnderVideoSection>
 
-            <UnderVideoSection sx={{ position: 'relative', paddingTop: '4rem', backgroundColor: '#fff', color: '#000' }}>
+            <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: '4rem', }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
@@ -126,19 +126,19 @@ export default function ServicesTimeline() {
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
                         width: '90%',
-                        maxWidth: 1000,
+                        maxWidth: '500px',
                         zIndex: 2,
                     }}
                 >
                     <QuoteBox elevation={0}>
-                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
-                            -- "Non si tratta solo di essere online, ma di farlo nel modo giusto." --
+                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
+                            Non si tratta solo di essere online, ma di farlo nel modo giusto.
                         </Typography>
                     </QuoteBox>
                 </Box>
             </UnderVideoSection>
 
-            <UnderVideoSection sx={{ paddingTop: '4rem', backgroundColor: '#000', color: '#fff' }}>
+            <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '4rem', }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
@@ -152,7 +152,7 @@ export default function ServicesTimeline() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{
-                paddingTop: '6rem', paddingBottom: '4rem',
+                paddingTop: '10rem', paddingBottom: '4rem',
                 backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
@@ -160,19 +160,19 @@ export default function ServicesTimeline() {
             }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
                     {/* Titolo principale */}
-                    <Box sx={{ marginBottom: { sm: '2rem', lg: '4rem' }, width: '100%' }}>
+                    <Box sx={{ marginBottom: { sm: '2rem', lg: '6rem' }, width: '100%' }}>
                         <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
                             Il Sentiero del Successo
                         </Typography>
                     </Box>
                     <VerticalLine />
                     {/* Linea verticale della timeline */}
-                    <Box sx={{ paddingTop: '2rem', position: 'relative', ml: '1rem', mb: 4, mt: { sm: 6, lg: 8 } }}>
+                    <Box sx={{ paddingTop: '6rem', position: 'relative', ml: '1rem', mb: 4, mt: { sm: 6, lg: 8 } }}>
                         <Box
                             sx={{
                                 position: 'absolute',
                                 left: '0',
-                                top: 0,
+                                top: 60,
                                 bottom: 0,
                                 width: '4px',
                                 backgroundColor: theme.palette.secondary.third,

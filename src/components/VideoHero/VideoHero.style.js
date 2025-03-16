@@ -79,8 +79,12 @@ export const StyledH1 = styled(Typography)(({ theme }) => ({
     padding: theme.spacing(2),
     // Usa il tuo colore secondario o quello che preferisci
     color: theme.palette.secondary.main,
-    top: '15%',
+    top: '17.5%',
+    opacity: '0.75',
     '@media screen and (max-width:768px)': {
-        fontSize: '1.50rem',
+        fontSize: '1.15rem'
+    },
+    '@media screen and (min-width:768px)': {
+        fontSize: '3rem'
     },
 }));

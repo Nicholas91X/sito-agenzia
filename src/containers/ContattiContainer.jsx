@@ -42,11 +42,6 @@ export default function ContattiContainer() {
     // Primo blocco di social
     const socialLinks = [
         {
-            name: 'Youtube',
-            url: 'https://youtube.com',
-            icon: <YouTubeIcon sx={{ fontSize: { md: 16, lg: 36 } }} />,
-        },
-        {
             name: 'LinkedIn',
             url: 'https://linkedin.com',
             icon: <LinkedInIcon sx={{ fontSize: { md: 16, lg: 36 } }} />,
@@ -87,7 +82,7 @@ export default function ContattiContainer() {
                 onScrollDown={handleScrollDown}
             />
 
-            <UnderVideoSection sx={{ paddingTop: '4rem', backgroundColor: '#000', color: '#fff' }}>
+            <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem' }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
@@ -105,7 +100,7 @@ export default function ContattiContainer() {
                 </Box>
             </UnderVideoSection>
 
-            <UnderVideoSection sx={{ position: 'relative', paddingTop: '4rem', backgroundColor: '#fff', color: '#000' }}>
+            <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom:  { xs: '4rem', sm: '4rem', md: '4rem', lg: '8rem', xl: '8rem' } }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
@@ -125,13 +120,13 @@ export default function ContattiContainer() {
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
                         width: '90%',
-                        maxWidth: 1000,
+                        maxWidth: '600px',
                         zIndex: 2,
                     }}
                 >
                     <QuoteBox elevation={0}>
-                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.5rem' }}>
-                            -- "Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali." --
+                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
+                            Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali.
                         </Typography>
                     </QuoteBox>
                 </Box>
@@ -139,7 +134,7 @@ export default function ContattiContainer() {
 
             {/* PRIMO BLOCCO: SOCIAL */}
             <UnderVideoSection
-                sx={{ padding: '3rem 0', backgroundColor: '#000', color: '#fff', minHeight: '50vh' }}
+                sx={{ padding: '8rem 0', backgroundColor: '#000', color: '#fff', minHeight: '50vh' }}
             >
                 <Box
                     sx={{
@@ -160,7 +155,7 @@ export default function ContattiContainer() {
                         <Typography
                             variant="h5" // più piccolo di h3
                             sx={{
-                                mb: 4,
+                                mb: 10,
                                 textAlign: 'center',
                                 fontFamily: 'Tan Pearl',
                                 fontSize: { xs: '1.5rem', md: '2rem' }, // dimensione ridotta + responsive
@@ -235,7 +230,7 @@ export default function ContattiContainer() {
 
             {/* SECONDO BLOCCO: TELEFONO E MAIL */}
             <UnderVideoSection
-                sx={{ padding: '3rem 0', backgroundColor: '#fff', color: '#000', minHeight: '50vh' }}
+                sx={{ padding: '8rem 0', backgroundColor: '#fff', color: '#000', minHeight: '50vh' }}
             >
                 <Box
                     sx={{
@@ -256,7 +251,7 @@ export default function ContattiContainer() {
                         <Typography
                             variant="h5"
                             sx={{
-                                mb: 4,
+                                mb: 10,
                                 textAlign: 'center',
                                 fontFamily: 'Tan Pearl',
                                 fontSize: { xs: '1.5rem', md: '2rem' },
@@ -274,7 +269,7 @@ export default function ContattiContainer() {
                                     xs: '1fr',
                                     sm: '1fr 1fr',
                                     md: '1fr 1fr',
-                                    lg: '1fr 1fr 1fr 1fr',
+                                    lg: '1fr 1fr',
                                 },
                                 gap: '2rem',
                             }}
@@ -283,7 +278,7 @@ export default function ContattiContainer() {
                                 <Box
                                     key={item.name}
                                     sx={{
-                                        backgroundColor: 'secondary.third',
+                                        backgroundColor: 'secondary.main',
                                         p: { xs: '1rem', sm: '1.5rem', md: '2rem' },
                                         transition: 'transform 0.3s, box-shadow 0.3s',
                                         '&:hover': {
@@ -330,8 +325,8 @@ export default function ContattiContainer() {
 
             {/* TERZO BLOCCO: CALENDLY */}
             <UnderVideoSection sx={{
-                paddingTop: '4rem',
-                paddingBottom: '4rem',
+                paddingTop: '8rem',
+                paddingBottom: '8rem',
                 color: '#fff',
                 backgroundImage: "url('/assets/images/trama-definitiva-2-min.png')",
                 backgroundSize: 'cover',
@@ -362,141 +357,6 @@ export default function ContattiContainer() {
                     </Typography>
                 </Box>
                 <CalendlyEmbed style={{ minWidth: '200px' }} />
-            </UnderVideoSection>
-
-            {/* QUARTO BLOCCO: FORM */}
-            <UnderVideoSection
-                sx={{
-                    paddingTop: '4rem',
-                    paddingBottom: '4rem',
-                    backgroundColor: '#fff',
-                    color: '#000',
-                    backgroundImage: "url('/assets/images/trama-definitiva-1-min.png')",
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                }}
-            >
-                <Box
-                    sx={{
-                        width: '90%',
-                        maxWidth: 800,
-                        mx: 'auto',
-                        py: 4,
-                        px: { xs: 2, sm: 4 },
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }}
-                >
-                    <Box
-                        sx={{
-                            marginBottom: '2rem',
-                            padding: '2rem',
-                            width: '100%',
-                            maxWidth: '300px',
-                            backgroundColor: '#000',
-                            boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-                            borderRadius: '8px',
-                        }}
-                    >
-                        {/* Titolo form più piccolo */}
-                        <Typography
-                            variant="h6"
-                            sx={{
-                                mb: 4,
-                                textAlign: 'center',
-                                fontFamily: 'Tan Pearl',
-                                color: '#fff',
-                                fontSize: { xs: '1rem', sm: '1.2rem' },
-                            }}
-                        >
-                            Lasciaci un messaggio
-                        </Typography>
-
-                        {/* Form */}
-                        <Box
-                            component="form"
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '1.5rem',
-                                fontFamily: 'Tan Pearl'
-                            }}
-                            onSubmit={(e) => {
-                                e.preventDefault();
-                                // logica di submit
-                            }}
-                        >
-                            <TextField
-                                label="Nome"
-                                variant="outlined"
-                                fullWidth
-                                sx={{
-                                    fontFamily: 'inherit',
-                                    // Riduci la grandezza del label e del testo interno
-                                    '& .MuiInputBase-input': {
-                                        fontSize: '0.9rem',
-                                        border: '1px solid #fff'
-                                    },
-                                    '& .MuiInputLabel-root': {
-                                        fontSize: '0.85rem',
-                                        color: '#fff'
-                                    },
-                                }}
-                            />
-                            <TextField
-                                label="Email"
-                                variant="outlined"
-                                fullWidth
-                                sx={{
-                                    fontFamily: 'inherit',
-                                    '& .MuiInputBase-input': {
-                                        fontSize: '0.9rem',
-                                        border: '1px solid #fff'
-                                    },
-                                    '& .MuiInputLabel-root': {
-                                        fontSize: '0.85rem',
-                                        color: '#fff'
-                                    },
-                                }}
-                            />
-                            <TextField
-                                label="Messaggio"
-                                variant="outlined"
-                                fullWidth
-                                multiline
-                                rows={4}
-                                sx={{
-                                    fontFamily: 'inherit',
-                                    '& .MuiInputBase-input': {
-                                        fontSize: '0.9rem',
-                                        border: '1px solid #fff'
-                                    },
-                                    '& .MuiInputBase-root': {
-                                        padding: 0
-                                    },
-                                    '& .MuiInputLabel-root': {
-                                        fontSize: '0.85rem',
-                                        color: '#fff'
-                                    },
-                                }}
-                            />
-                            <Button
-                                type="submit"
-                                variant="contained"
-                                color="primary"
-                                sx={{
-                                    alignSelf: 'flex-end',
-                                    fontFamily: 'inherit',
-                                    mt: 1,
-                                    fontSize: '0.8rem',
-                                }}
-                            >
-                                Invia
-                            </Button>
-                        </Box>
-                    </Box>
-                </Box>
             </UnderVideoSection>
 
             <VideoFooter
