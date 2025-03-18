@@ -77,7 +77,7 @@ export default function ContattiContainer() {
             <Navbar />
             <VideoHero
                 videoRef={mainVideoRef}
-                videoSrc="/assets/videos/video_contatti.mp4"
+                videoSrc="/assets/videos/video_contatti-2.mp4"
                 titleText="Contattaci"
                 onScrollDown={handleScrollDown}
             />
@@ -328,7 +328,7 @@ export default function ContattiContainer() {
                 paddingTop: '8rem',
                 paddingBottom: '8rem',
                 color: '#fff',
-                backgroundImage: "url('/assets/images/trama-definitiva-2-min.png')",
+                backgroundImage: "url('/assets/images/trama-definitiva-8-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',

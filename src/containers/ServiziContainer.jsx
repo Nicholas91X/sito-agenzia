@@ -88,7 +88,7 @@ export default function ServicesTimeline() {
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem', }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
+                        <Typography variant="h3" sx={{ mb: 6, textAlign: 'center', }}>
                             Servizio All-inclusive
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
@@ -152,11 +152,7 @@ export default function ServicesTimeline() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{
-                paddingTop: '10rem', paddingBottom: '4rem',
-                backgroundImage: "url('/assets/images/trama-definitiva-3-min.png')",
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
+                paddingTop: '10rem', paddingBottom: '4rem'
             }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
                     {/* Titolo principale */}
