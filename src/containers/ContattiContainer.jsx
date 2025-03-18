@@ -16,7 +16,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
-import { QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+import { ChalkboardQuoteBox, QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
 
 export default function ContattiContainer() {
     const theme = useTheme();
@@ -124,11 +124,11 @@ export default function ContattiContainer() {
                         zIndex: 2,
                     }}
                 >
-                    <QuoteBox elevation={0}>
+                    <ChalkboardQuoteBox elevation={0}>
                         <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
                             Conosciamo le sfide del mercato locale e sappiamo trasformarle in opportunità reali.
                         </Typography>
-                    </QuoteBox>
+                    </ChalkboardQuoteBox>
                 </Box>
             </UnderVideoSection>
 

@@ -416,3 +416,86 @@ export const QuoteBox = styled(Paper)(({ theme }) => ({
     borderLeft: '2px solid white',
     borderRight: '2px solid black',
 }));
+
+/**
+* 2) LIBRO APERTO
+* - Usa una texture di pagina di libro (book-page.jpg).
+* - Font serif per un aspetto più "letterario".
+*/
+export const BookOpenQuoteBox = styled(Paper)(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '3rem 4rem',
+    margin: theme.spacing(2, 3),
+    // Texture pagina di libro
+    backgroundImage: 'url("/assets/images/book-page.jpg")',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    // Font serif (assicurati di avere un font adatto)
+    fontFamily: 'Garamond, Georgia, serif',
+    color: '#3b2d1f', // un marrone scuro
+    // Simuliamo un leggero ingiallimento
+    boxShadow: 'inset 0 0 30px rgba(139, 69, 19, 0.3)',
+    fontStyle: 'italic',
+    // Bordi / stile per simulare i margini di un libro
+    border: '1px solid rgba(0,0,0,0.2)',
+    borderRadius: '4px',
+}));
+
+/**
+* 4) LAVAGNA
+* - Usa una texture di lavagna (chalkboard.jpg).
+* - Font "chalk" se disponibile, o un cursive/handwritten come fallback.
+*/
+export const ChalkboardQuoteBox = styled(Paper)(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '2.5rem 4rem',
+    margin: theme.spacing(2, 3),
+    // Texture lavagna
+    backgroundImage: 'url("/assets/images/chalkboard.jpg")',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
+    backgroundPosition: 'center',
+    // Testo bianco gessetto
+    color: '#fff',
+    // Font chalk (es. "Schoolbell", "Shadows Into Light" o un custom chalk font)
+    fontFamily: '"Shadows Into Light", cursive, sans-serif',
+    // Leggero effetto polvere di gesso
+    textShadow: '0 1px 2px rgba(0,0,0,0.5)',
+    fontStyle: 'italic',
+    // Bordo leggero bianco per staccare
+    border: '2px solid #fff',
+}));
+
+
+/**
+* 7) SCRITTA A MANO CON PENNA STILOGRAFICA
+* - Usa un font calligrafico (es. "Dancing Script", "Great Vibes", ecc.)
+* - Sfondo carta leggera (light-paper.jpg) o semplicemente un colore chiaro
+*/
+export const HandwrittenQuoteBox = styled(Paper)(({ theme }) => ({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '2.5rem 4rem',
+    margin: theme.spacing(2, 3),
+    // Semplice sfondo carta chiara
+    backgroundImage: 'url("/assets/images/light-paper.jpg")',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    // Font calligrafico
+    fontFamily: '"Great Vibes", "Dancing Script", cursive, serif',
+    // Colore testo simile all'inchiostro
+    color: '#2c2c2c',
+    // Leggera ombra per simulare l'inchiostro che si deposita
+    textShadow: '0 0 2px rgba(0,0,0,0.2)',
+    fontStyle: 'italic',
+    // Un bordo sottile e delicato
+    border: '1px solid rgba(0,0,0,0.2)',
+    borderRadius: '4px',
+}));

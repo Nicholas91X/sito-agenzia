@@ -45,10 +45,10 @@ export default function HomeContainer() {
 
     // Array di servizi per .map
     const services = [
-        { label: 'DIGITAL MARKETING /', src: '/assets/videos/mockup.mp4' },
-        { label: 'SOCIAL MEDIA MARKETING /', src: '/assets/videos/mockup_1.mp4' },
-        { label: 'WEBSITES /', src: '/assets/videos/mockup_2.mp4' },
-        { label: 'FOTO & VIDEO /', src: '/assets/videos/mockup_3.mp4' },
+        { label: 'DIGITAL MARKETING /', src: '/assets/images/preview-1.png' },
+        { label: 'SOCIAL MEDIA MARKETING /', src: '/assets/images/preview-2.png' },
+        { label: 'WEBSITES /', src: '/assets/images/preview-5.png' },
+        { label: 'FOTO & VIDEO /', src: '/assets/images/preview-4.png' },
     ];
 
     // Scroll su click
@@ -78,7 +78,7 @@ export default function HomeContainer() {
                 padding: {
                     xs: '0 1rem 2.5rem 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem 5rem 5rem', xl: '0 10rem',
                 },
-                backgroundImage: "url('/assets/images/trama-definitiva-4-min.png')",
+                backgroundImage: "url('/assets/images/trama-definitiva-6-min.png')",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',

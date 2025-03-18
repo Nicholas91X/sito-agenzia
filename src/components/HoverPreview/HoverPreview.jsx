@@ -2,8 +2,8 @@ import React from 'react';
 import {
     HoverPreviewContainer,
     PreviewBox,
-    PreviewVideo,
     PreviewText,
+    PreviewImage,
 } from './HoverPreview.style';
 
 export default function HoverPreviewItem({
@@ -22,9 +22,10 @@ export default function HoverPreviewItem({
             <PreviewText>{label}</PreviewText>
             <PreviewBox className="preview">
                 {previewRefs.current[index] && (
-                    <PreviewVideo autoPlay muted loop playsInline preload="none">
-                        <source src={previewRefs.current[index]} type="video/mp4" />
-                    </PreviewVideo>
+                    <PreviewImage
+                        src={previewRefs.current[index]}
+                        alt={label}
+                    />
                 )}
             </PreviewBox>
         </HoverPreviewContainer>

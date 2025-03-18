@@ -11,7 +11,7 @@ import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import TimelineStep from '@/components/VideoContainer/TimelineStep';
 import VideoHero from '@/components/VideoHero/VideoHero';
-import { QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+import { ChalkboardQuoteBox, QuoteBox, StoneEngravedQuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
 
 
 const timelineSteps = [
@@ -130,11 +130,11 @@ export default function ServicesTimeline() {
                         zIndex: 2,
                     }}
                 >
-                    <QuoteBox elevation={0}>
+                    <ChalkboardQuoteBox elevation={0}>
                         <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
                             Non si tratta solo di essere online, ma di farlo nel modo giusto.
                         </Typography>
-                    </QuoteBox>
+                    </ChalkboardQuoteBox>
                 </Box>
             </UnderVideoSection>
 
