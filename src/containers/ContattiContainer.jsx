@@ -82,9 +82,9 @@ export default function ContattiContainer() {
             />
 
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem' }}>
-                <Box sx={{ width: '90%', mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', width: '100%' }}>
+                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center' }}>
                             Conosciamoci
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
@@ -100,7 +100,7 @@ export default function ContattiContainer() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom:  { xs: '4rem', sm: '4rem', md: '4rem', lg: '8rem', xl: '8rem' } }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
                             Se vuoi scoprire come possiamo aiutarti, scrivici o prenota una consulenza gratuita: insieme costruiremo una strategia efficace per la tua crescita.
