@@ -17,7 +17,7 @@ const CalendlyEmbed = () => {
             {/* Div contenente il widget: sostituisci data-url con il link del tuo evento */}
             <div
                 className="calendly-inline-widget"
-                data-url="https://calendly.com/wide-digitagency"
+                data-url="https://calendly.com/widestudiodigitale"
                 style={{ height: '730px', border: '1px solid black', backgroundColor: '#fff' }}
             ></div>
         </>

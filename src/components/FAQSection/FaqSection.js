@@ -76,7 +76,7 @@ const FaqAccordion = ({ idx, question, answer, expanded, onChange }) => (
                         </Box>
                     </motion.span>
                 </Box>
-                <Typography variant="titoliFAQ" sx={{ textAlign: 'left', fontWeight: 'bold', color: '#fff', lineHeight: { xs: '1.5rem', sm: '1.5rem', md: '2rem', lg: '3rem', xl: '3rem' } }}>
+                <Typography variant="titoliFAQ" sx={{ textAlign: { xs: 'center', sm: 'center' }, fontWeight: 'bold', color: '#fff', lineHeight: { xs: '1.5rem', sm: '1.5rem', md: '2rem', lg: '3rem', xl: '3rem' } }}>
                     {question}
                 </Typography>
             </Box>

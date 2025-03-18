@@ -82,9 +82,9 @@ export default function ContattiContainer() {
             />
 
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem' }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                <Box sx={{ width: '90%', mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
+                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', width: '100%' }}>
                             Conosciamoci
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
@@ -356,7 +356,7 @@ export default function ContattiContainer() {
                         Prenota una call
                     </Typography>
                 </Box>
-                <CalendlyEmbed style={{ minWidth: '200px' }} />
+                <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} />
             </UnderVideoSection>
 
             <VideoFooter

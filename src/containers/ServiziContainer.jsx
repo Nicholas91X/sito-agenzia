@@ -187,7 +187,7 @@ export default function ServicesTimeline() {
             <UnderVideoSection sx={{ paddingTop: '10rem', backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', color: '#fff', paddingBottom: '8rem', }}>
                 <Box sx={{ width: '90%', mx: 'auto', padding: { xs: '0 1rem', sm: '0 3rem', md: '0 7.5rem', lg: '0 7.5rem', xl: '0 7.5rem' } }}>
                     <Box sx={{ marginBottom: '2rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 8, textAlign: 'center', }}>
+                        <Typography variant="h3" sx={{ mb: 8, textAlign: { xs: 'center', sm: 'center' }, }}>
                             Rispondiamo alle tue domande
                         </Typography>
                         <FaqSection />
