@@ -1,6 +1,4 @@
 import { useEffect } from 'react';
-import Head from 'next/head';
-import { Box } from '@mui/material';
 
 const CalendlyEmbed = () => {
     useEffect(() => {
@@ -16,18 +14,11 @@ const CalendlyEmbed = () => {
 
     return (
         <>
-            {/* Importa il CSS necessario */}
-            <Head>
-                <link
-                    href="https://assets.calendly.com/assets/external/widget.css"
-                    rel="stylesheet"
-                />
-            </Head>
             {/* Div contenente il widget: sostituisci data-url con il link del tuo evento */}
             <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/wide-digitagency"
-                style={{ height: '730px', border: '1px solid black', backgroundColor: '#fff'  }}
+                style={{ height: '730px', border: '1px solid black', backgroundColor: '#fff' }}
             ></div>
         </>
     );
