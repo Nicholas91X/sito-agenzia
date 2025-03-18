@@ -38,11 +38,21 @@ export default function MobileMenuDrawer({ open, onClose, menuItems, activeMenu,
 
             {/* SOCIAL ICONS */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0.1, sm: 0.5 } }}>
-                <SocialIconButton color="secondary"><LinkedInIcon /></SocialIconButton>
-                <SocialIconButton color="secondary"><InstagramIcon /></SocialIconButton>
-                <SocialIconButton color="secondary"><FacebookIcon /></SocialIconButton>
-                <SocialIconButton color="secondary"><EmailIcon /></SocialIconButton>
-                <SocialIconButton color="secondary"><PhoneIcon /></SocialIconButton>
+                <a href="https://www.linkedin.com/company/widestudiodigitale/" target="_blank" rel="noopener noreferrer">
+                    <SocialIconButton color="secondary"><LinkedInIcon /></SocialIconButton>
+                </a>
+                <a href="https://www.instagram.com/wide_studiodigitale?igsh=MXR5dWZ6bnk1Y3VidA==" target="_blank" rel="noopener noreferrer">
+                    <SocialIconButton color="secondary"><InstagramIcon /></SocialIconButton>
+                </a>
+                <a href="https://www.facebook.com/share/1AHQBPjrD8/" target="_blank" rel="noopener noreferrer">
+                    <SocialIconButton color="secondary"><FacebookIcon /></SocialIconButton>
+                </a>
+                <a href="mailto:widestudiodigitale@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <SocialIconButton color="secondary"><EmailIcon /></SocialIconButton>
+                </a>
+                <a href="tel:+3271562265" target="_blank" rel="noopener noreferrer">
+                    <SocialIconButton color="secondary"><PhoneIcon /></SocialIconButton>
+                </a>
             </Box>
         </StyledDrawer>
     );

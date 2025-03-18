@@ -9,7 +9,6 @@ import { UnderVideoSection } from '@/components/Commons/CommonsComponents';
 import { Box, IconButton, Typography, TextField, Button } from '@mui/material';
 
 // Icone MUI
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -43,17 +42,17 @@ export default function ContattiContainer() {
     const socialLinks = [
         {
             name: 'LinkedIn',
-            url: 'https://linkedin.com',
+            url: 'https://www.linkedin.com/company/widestudiodigitale/',
             icon: <LinkedInIcon sx={{ fontSize: { md: 16, lg: 36 } }} />,
         },
         {
             name: 'Instagram',
-            url: 'https://instagram.com',
+            url: 'https://www.instagram.com/wide_studiodigitale?igsh=MXR5dWZ6bnk1Y3VidA==',
             icon: <InstagramIcon sx={{ fontSize: { md: 16, lg: 36 } }} />,
         },
         {
             name: 'Facebook',
-            url: 'https://facebook.com',
+            url: 'https://www.facebook.com/share/1AHQBPjrD8/',
             icon: <FacebookIcon sx={{ fontSize: { md: 16, lg: 36 } }} />,
         },
     ];
@@ -62,12 +61,12 @@ export default function ContattiContainer() {
     const phoneAndMail = [
         {
             name: 'Email',
-            url: 'mailto:info@miosito.it',
+            url: 'mailto:widestudiodigitale@gmail.com',
             icon: <EmailIcon sx={{ fontSize: { md: 16, lg: 36 }, color: '#000' }} />,
         },
         {
             name: 'Telefono',
-            url: 'tel:+39123456789',
+            url: 'tel:3271562265',
             icon: <PhoneIcon sx={{ fontSize: { md: 16, lg: 36 }, color: '#000' }} />,
         },
     ];

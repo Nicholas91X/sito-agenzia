@@ -82,6 +82,11 @@ let theme = createTheme({
             fontSize: "0.75rem",
             fontWeight: 500,
         },
+        poppinsh5: {
+            fontFamily: "Poppins, sans-serif",
+            fontSize: "0.75rem",
+            fontWeight: 500,
+        },
         personal: {
             fontFamily: "Inter, sans-serif",
             fontSize: "1rem",

@@ -25,13 +25,13 @@ export default function VideoFooter({ videoRef, videoSrc }) {
 
             <FooterOverlay />
             <FooterContent>
-                <Typography variant="h5" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', margin: '1.25rem 0 0.8rem 0' }}>
+                <SocialIcons />
+                <Typography variant="poppinsh5" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', margin: '1.25rem 0 0.3rem 0' }}>
                     Alessia Amoruso - WIDE
                 </Typography>
-                <Typography variant="h5" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
-                    P.IVA IT12346683989384898
+                <Typography variant="poppinsh5" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
+                    P.IVA 13486160966
                 </Typography>
-                <SocialIcons />
             </FooterContent>
         </BoxVideoFooter>
     );
