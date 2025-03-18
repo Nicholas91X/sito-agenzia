@@ -64,6 +64,19 @@ let theme = createTheme({
             },
             fontWeight: 500,
         },
+        titoliFAQ: {
+            fontFamily: "Poppins, sans-serif",
+            fontSize: "5rem",
+            [baseTheme.breakpoints.up("xs")]: {
+                fontSize: "0.9rem",
+                fontWeight: 200,
+            },
+            [baseTheme.breakpoints.up("md")]: {
+                fontSize: "1.5rem",
+                fontWeight: 200,
+            },
+            fontWeight: 200,
+        },
         h5: {
             fontFamily: "Tan Pearl, sans-serif",
             fontSize: "0.75rem",

@@ -272,7 +272,7 @@ export default function ContattiContainer() {
                                     md: '1fr 1fr',
                                     lg: '1fr 1fr',
                                 },
-                                gap: '0.1rem',
+                                gap: '2rem',
                             }}
                         >
                             {phoneAndMail.map((item) => (

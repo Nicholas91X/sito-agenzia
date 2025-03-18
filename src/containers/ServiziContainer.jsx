@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
 import DigitalIcon from '@mui/icons-material/ShowChart';
 import SocialIcon from '@mui/icons-material/Share';
@@ -11,7 +11,8 @@ import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import TimelineStep from '@/components/VideoContainer/TimelineStep';
 import VideoHero from '@/components/VideoHero/VideoHero';
-import { ChalkboardQuoteBox, QuoteBox, StoneEngravedQuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+import { ChalkboardQuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+import FaqSection from '@/components/FAQSection/FaqSection';
 
 
 const timelineSteps = [
@@ -179,6 +180,17 @@ export default function ServicesTimeline() {
                                 <TimelineStep key={index} step={step} />
                             ))}
                         </Box>
+                    </Box>
+                </Box>
+            </UnderVideoSection>
+
+            <UnderVideoSection sx={{ paddingTop: '10rem', backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', color: '#fff', paddingBottom: '8rem', }}>
+                <Box sx={{ width: '90%', mx: 'auto', padding: { xs: '0 1rem', sm: '0 3rem', md: '0 7.5rem', lg: '0 7.5rem', xl: '0 7.5rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', width: '100%' }}>
+                        <Typography variant="h3" sx={{ mb: 8, textAlign: 'center', }}>
+                            Rispondiamo alle tue domande
+                        </Typography>
+                        <FaqSection />
                     </Box>
                 </Box>
             </UnderVideoSection>
