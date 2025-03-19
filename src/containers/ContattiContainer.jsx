@@ -16,6 +16,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
 import { ChalkboardQuoteBox, QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
+import MeetingLinkCard from '@/components/Doodle/MeetinglinkCard';
 
 export default function ContattiContainer() {
     const theme = useTheme();
@@ -99,7 +100,7 @@ export default function ContattiContainer() {
                 </Box>
             </UnderVideoSection>
 
-            <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom:  { xs: '4rem', sm: '4rem', md: '4rem', lg: '8rem', xl: '8rem' } }}>
+            <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: { xs: '4rem', sm: '4rem', md: '4rem', lg: '8rem', xl: '8rem' } }}>
                 <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
@@ -356,7 +357,13 @@ export default function ContattiContainer() {
                         Prenota una call
                     </Typography>
                 </Box>
-                <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} />
+                {/* <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} /> */}
+                <MeetingLinkCard
+                    imageSrc="/assets/images/logo.png"
+                    title="Prenota una Riunione"
+                    description="Clicca qui per accedere alla nostra pagina di prenotazione"
+                    link="https://doodle.com/bp/wide_studiodigitale/consulenza-gratuita-wide"
+                />
             </UnderVideoSection>
 
             <VideoFooter
