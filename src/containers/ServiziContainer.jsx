@@ -145,7 +145,7 @@ export default function ServicesTimeline() {
                             Tecnologia Innovativa, Servizio Affidabile
                         </Typography>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Il digitale evolve rapidamente, noi con lui. Ti offriamo soluzioni innovative e all'avanguardia, frutto di costante aggiornamento e passione per il settore. Un team affidabile e competente al tuo fianco, per un futuro digitale solido e di successo.
+                            Il digitale evolve rapidamente, noi con lui. Ti offriamo soluzioni innovative e all&apos;avanguardia, frutto di costante aggiornamento e passione per il settore. Un team affidabile e competente al tuo fianco, per un futuro digitale solido e di successo.
                         </Typography>
                     </Box>
                 </Box>

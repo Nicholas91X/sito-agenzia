@@ -90,7 +90,7 @@ export default function HomeContainer() {
                         Noi vogliamo renderti <strong>tutto più semplice.</strong>
                     </Typography>
                     <Typography variant="body2" sx={{ textAlign: 'left', width: '100%' }}>
-                        Aiutiamo le aziende e i liberi professionisti di <strong>La Spezia, Massa e Carrara</strong> a ottenere risultati concreti online, trasformando i canali digitali in un'opportunità concreta.
+                        Aiutiamo le aziende e i liberi professionisti di <strong>La Spezia, Massa e Carrara</strong> a ottenere risultati concreti online, trasformando i canali digitali in un&apos;opportunità concreta.
                     </Typography>
                     <Typography variant="body2" sx={{ textAlign: 'left', width: '100%' }}>
                         Creiamo strategie su misura per <strong>aumentare la tua visibilità, attrarre clienti e rafforzare la tua reputazione.</strong>

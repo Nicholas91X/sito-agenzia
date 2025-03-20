@@ -97,7 +97,7 @@ export default function ChiSiamoContainer() {
                             Guida Completa e Personalizzata
                         </SectionTitle>
                         <SectionText sx={{ textAlign: 'left' }}>
-                            Ti seguiamo passo dopo passo, eliminando l'incertezza e permettendoti di concentrarti sul tuo core business.
+                            Ti seguiamo passo dopo passo, eliminando l&apos;incertezza e permettendoti di concentrarti sul tuo core business.
                         </SectionText>
                     </Box>
                     <Box>
@@ -115,7 +115,7 @@ export default function ChiSiamoContainer() {
                             Immagine al Passo coi Tempi
                         </SectionTitle>
                         <SectionText sx={{ textAlign: 'left' }} variant="body2">
-                            Con un sito web curato e una presenza social professionale, darai al tuo business l'immagine di innovazione che attira anche un target più giovane.
+                            Con un sito web curato e una presenza social professionale, darai al tuo business l&apos;immagine di innovazione che attira anche un target più giovane.
                         </SectionText>
                     </Box>
                     <Box>

@@ -17,21 +17,20 @@ export default function Navbar() {
     const isMdOrBelow = useMediaQuery(theme.breakpoints.down('md'));
 
 
-    const menuItems = [
+    const menuItems = useMemo(() => [
         { name: "Home", path: "/" },
         { name: "Chi Siamo", path: "/chi-siamo" },
         { name: "Servizi", path: "/servizi" },
         { name: "Contatti", path: "/contatti" },
         { name: "Quiz", path: "/quiz" },
-    ];
+    ], []);
 
-    // Imposta il menu attivo in base all'URL
     useEffect(() => {
         const currentItem = menuItems.find(item => item.path === router.pathname);
         if (currentItem) {
             setActiveMenu(currentItem.name);
         }
-    }, [router.pathname]);
+    }, [router.pathname, menuItems]);
 
     useEffect(() => {
         const handleScroll = () => {
