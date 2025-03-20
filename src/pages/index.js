@@ -1,15 +1,21 @@
+import Layout from '@/components/Layout/Layout';
+import SEO from '@/components/SEO/SEO';
 import HomeContainer from '@/containers/HomeContainer';
-import Head from 'next/head';
+import { useRef } from 'react';
 
 export default function Home() {
+    const footerVideoRef = useRef(null);
+
     return (
         <>
-            <Head>
-                <title>Home - Sito Wide Studio Digitale</title>
-                <meta name="description" content="Sito vetrina" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
-            <HomeContainer />
+            <SEO
+                title="Home - Sito Wide Studio Digitale"
+                description="Sito vetrina di Wide Studio Digitale. Scopri i nostri servizi digitali e inizia a far crescere il tuo business online."
+                canonical="https://www.widestudiodigitale.it"
+            />
+            <Layout footerVideoRef={footerVideoRef} videoSrc="/assets/videos/loop.mp4">
+                <HomeContainer footerVideoRef={footerVideoRef} />
+            </Layout>
         </>
     );
 }
