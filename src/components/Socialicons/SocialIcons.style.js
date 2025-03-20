@@ -11,6 +11,5 @@ export const SocialIconsContainer = styled(Box)({
 });
 
 export const SocialIconButton = styled(IconButton)(({ theme }) => ({
-    // Esempio di stile personalizzato
     color: theme.palette.secondary.main,
 }));

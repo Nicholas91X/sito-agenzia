@@ -1,11 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import useAutoplayVideos from '../hooks/useAutoplayVideos';
-
-// Componenti estratti
 import VideoHero from '../components/VideoHero/VideoHero';
 import VideoFooter from '../components/VideoFooter/VideoFooter';
-
-// Alcuni styled component ereditati (se vuoi) oppure puoi crearne di nuovi
 import { Typography } from '@mui/material';
 import Navbar from '@/components/Navbar/Navbar';
 import HoverPreviewItem from '@/components/HoverPreview/HoverPreview';
@@ -83,7 +79,7 @@ export default function HomeContainer() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
             }}>
-                <BoxUnderVideoSection sx={{ padding: {xs: '2rem 0', sm: '0', lg: '0 5rem', xl: '0 5rem'} }}>
+                <BoxUnderVideoSection sx={{ padding: { xs: '2rem 0', sm: '0', lg: '0 5rem', xl: '0 5rem' } }}>
                     <Typography variant="h3" sx={{ margin: '2rem 0' }}>
                         Cosa facciamo
                     </Typography>
@@ -96,7 +92,7 @@ export default function HomeContainer() {
                     <Typography variant="body2" sx={{ textAlign: 'left', width: '100%' }}>
                         Aiutiamo le aziende e i liberi professionisti di <strong>La Spezia, Massa e Carrara</strong> a ottenere risultati concreti online, trasformando i canali digitali in un'opportunità concreta.
                     </Typography>
-                    <Typography variant="body2" sx={{ textAlign: 'left', width: '100%'}}>
+                    <Typography variant="body2" sx={{ textAlign: 'left', width: '100%' }}>
                         Creiamo strategie su misura per <strong>aumentare la tua visibilità, attrarre clienti e rafforzare la tua reputazione.</strong>
                     </Typography>
                 </BoxUnderVideoSection>
@@ -113,7 +109,7 @@ export default function HomeContainer() {
                 </BoxUnderVideoSection>
 
                 <BoxUnderVideoSection>
-                    <VerticalLine sx={{ marginBottom: { xs: '4.5rem', lg: '1.5rem' } }}/>
+                    <VerticalLine sx={{ marginBottom: { xs: '4.5rem', lg: '1.5rem' } }} />
                     <Typography variant="h3" sx={{ marginBottom: '1rem', marginTop: { lg: '5rem' } }}>
                         I nostri servizi
                     </Typography>
@@ -135,7 +131,7 @@ export default function HomeContainer() {
 
                 <BoxUnderVideoSection sx={{ margin: { xs: '2.5rem 0 1.25rem 0', sm: '2.5rem 0 1.25rem 0', lg: '5rem 0 2.5rem 0' } }}>
                     <BoxUnderRow>
-                        <Typography variant="h4" sx={{ textDecoration: 'underline', lineHeight: '1.5rem'}}>
+                        <Typography variant="h4" sx={{ textDecoration: 'underline', lineHeight: '1.5rem' }}>
                             SERVIZI IN DETTAGLIO
                         </Typography>
                         <Link href="/servizi" passHref>
@@ -145,14 +141,14 @@ export default function HomeContainer() {
                 </BoxUnderVideoSection>
 
                 <BoxUnderVideoSection sx={{ paddingBottom: '4rem' }}>
-                    <VerticalLine sx={{ marginBottom: { xs: '5rem', sm: '5rem', lg: '7rem', xl: '7rem' } }}/>
+                    <VerticalLine sx={{ marginBottom: { xs: '5rem', sm: '5rem', lg: '7rem', xl: '7rem' } }} />
                     <BoxUnderRow>
                         <AnotherBoxVideo autoPlay muted loop playsInline preload="auto">
                             <source src="/assets/videos/mockup_5.mp4" type="video/mp4" />
                             Il tuo browser non supporta i video.
                         </AnotherBoxVideo>
                     </BoxUnderRow>
-                    <BoxUnderRow sx= {{ marginTop: { xs: '2.5rem', sm: '2.5rem', lg: '5rem', xl: '5rem'} }}>
+                    <BoxUnderRow sx={{ marginTop: { xs: '2.5rem', sm: '2.5rem', lg: '5rem', xl: '5rem' } }}>
                         <Typography variant="h4" sx={{ textDecoration: 'underline' }}>
                             VAI AL QUIZ
                         </Typography>

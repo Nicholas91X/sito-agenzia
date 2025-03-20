@@ -18,7 +18,6 @@ export const VideoContainer = styled(Box)(({ theme }) => ({
     textAlign: 'center',
     height: '80vh',
     maxHeight: '515px',
-    // Media queries personalizzate
     '@media screen and (min-width:768px)': {
         height: '70vw',
         maxHeight: 'none',
@@ -77,7 +76,6 @@ export const StyledH1 = styled(Typography)(({ theme }) => ({
     height: '100%',
     textAlign: 'center',
     padding: theme.spacing(2),
-    // Usa il tuo colore secondario o quello che preferisci
     color: theme.palette.secondary.main,
     top: '17.5%',
     opacity: '0.75',

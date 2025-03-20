@@ -6,7 +6,9 @@ import { useTheme } from '@emotion/react';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import VideoHero from '@/components/VideoHero/VideoHero';
 import { ChalkboardQuoteBox, UnderVideoSection } from '@/components/Commons/CommonsComponents';
-import { Box, IconButton, Typography, TextField, Button } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
+import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
+import MeetingLinkCard from '@/components/Doodle/MeetinglinkCard';
 
 // Icone MUI
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -14,8 +16,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
-import MeetingLinkCard from '@/components/Doodle/MeetinglinkCard';
 
 export default function ContattiContainer() {
     const theme = useTheme();
@@ -152,12 +152,12 @@ export default function ContattiContainer() {
                 >
                     <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
                         <Typography
-                            variant="h5" // più piccolo di h3
+                            variant="h5"
                             sx={{
                                 mb: 10,
                                 textAlign: 'center',
                                 fontFamily: 'Tan Pearl',
-                                fontSize: { xs: '1.5rem', md: '2rem' }, // dimensione ridotta + responsive
+                                fontSize: { xs: '1.5rem', md: '2rem' },
                             }}
                         >
                             Seguici sui nostri social
@@ -167,7 +167,6 @@ export default function ContattiContainer() {
                         <Box
                             sx={{
                                 display: 'grid',
-                                // Le cards saranno centrate orizzontalmente
                                 justifyItems: 'center',
                                 gridTemplateColumns: {
                                     xs: '1fr',
@@ -184,7 +183,6 @@ export default function ContattiContainer() {
                                     key={item.name}
                                     sx={{
                                         backgroundColor: '#1A1A1A',
-                                        // padding ridotto e responsive
                                         p: { xs: '1rem', sm: '1.5rem', md: '2rem' },
                                         transition: 'transform 0.3s, box-shadow 0.3s',
                                         '&:hover': {
@@ -196,7 +194,6 @@ export default function ContattiContainer() {
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         fontFamily: 'Tan Pearl',
-                                        // Limiti di larghezza per ridurre dimensioni
                                         maxWidth: { xs: '250px', sm: '300px' },
                                         minWidth: '150px',
                                         border: '1px solid white'
@@ -263,7 +260,6 @@ export default function ContattiContainer() {
                         <Box
                             sx={{
                                 display: 'grid',
-                                // Centra orizzontalmente le card
                                 justifyItems: 'center',
                                 gridTemplateColumns: {
                                     xs: '1fr',
@@ -290,7 +286,6 @@ export default function ContattiContainer() {
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         fontFamily: 'Tan Pearl',
-                                        // Limita larghezza della card
                                         maxWidth: { xs: '250px', sm: '300px' },
                                         minWidth: '150px',
                                         border: '1px solid black'
@@ -356,13 +351,13 @@ export default function ContattiContainer() {
                         Prenota una call
                     </Typography>
                 </Box>
-                {/* <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} /> */}
-                <MeetingLinkCard
+                <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} />
+                {/* <MeetingLinkCard
                     imageSrc="/assets/images/logo.png"
                     title="Prenota una Riunione"
                     description="Clicca qui per accedere alla nostra pagina di prenotazione"
                     link="https://doodle.com/bp/wide_studiodigitale/consulenza-gratuita-wide"
-                />
+                /> */}
             </UnderVideoSection>
 
             <VideoFooter

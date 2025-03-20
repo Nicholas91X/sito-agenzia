@@ -55,10 +55,6 @@ export const StyledLogoImage = styled("img")(({ theme }) => ({
     width: "50%",
     maxWidth: "200px",
     border: `1px solid ${theme.palette.secondary.main}`,
-    // '@media screen and (max-width:768px)': {
-    //     width: "50%",
-    //     maxWidth: "200px",
-    // },
 }));
 
 export const StyledLogoContainerNavbar = styled(Box)(({ theme }) => ({

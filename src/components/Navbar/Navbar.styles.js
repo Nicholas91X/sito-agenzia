@@ -60,7 +60,6 @@ export const StyledMenuButton = styled(Button)(({ theme, active, page }) => {
         [theme.breakpoints.down('lg')]: {
             fontSize: '0.7rem',
         },
-        // Se il pulsante è attivo, usiamo il colore activeColor
         color: active === 'true' ? colors.activeColor : colors.color,
         '&:hover': {
             transform: 'scale(1.05)',

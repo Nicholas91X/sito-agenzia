@@ -46,7 +46,6 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Varianti base per la transizione (opzionali)
     const transitionVariants = {
         initial: { opacity: 0, scale: 0.8 },
         animate: { opacity: 1, scale: 1 },
@@ -80,7 +79,7 @@ export default function Navbar() {
                                             <StyledMenuButton
                                                 color="inherit"
                                                 active={activeMenu === item.name ? 'true' : 'false'}
-                                                page={currentPage} // Passiamo lo stesso valore a tutti i tab
+                                                page={currentPage}
                                                 onClick={() => {
                                                     setActiveMenu(item.name);
                                                     router.push(item.path);

@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    SocialIconsContainer,
     SocialIconButton,
 } from './SocialIcons.style';
 

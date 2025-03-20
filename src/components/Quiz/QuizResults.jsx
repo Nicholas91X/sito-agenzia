@@ -12,7 +12,6 @@ export function QuizResults({ overallScore, total }) {
 
     const maxScore = total * 3; // Ogni domanda vale al massimo 3 punti
 
-    // Definiamo entrambi i messaggi (analogia e invito) in un unico blocco if/else
     let messages = { analogy: '', invitation: '' };
 
     if (overallScore < 5) {

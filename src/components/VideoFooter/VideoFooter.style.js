@@ -4,7 +4,6 @@ import { styled } from '@mui/material/styles';
 export const BoxVideoFooter = styled('div')(({ theme }) => ({
     position: 'relative',
     width: '100%',
-    // Altezza responsive: più piccola sui dispositivi mobili, più alta su desktop
     height: '20vh',
     [theme.breakpoints.up('sm')]: {
         height: '20vh',
