@@ -44,7 +44,7 @@ const CalendlyEmbed = () => {
                 data-url="https://calendly.com/widestudiodigitale"
                 // data-url="https://calendly.com/widestudiodigitale?hide_gdpr_banner=1"
                 data-resize="true"
-                style={{ height: '730px', border: '1px solid black', backgroundColor: '#fff' }}
+                style={{ minWidth: '340px', height: '730px', border: '1px solid black', backgroundColor: '#fff' }}
             ></div>
         </div>
     );
