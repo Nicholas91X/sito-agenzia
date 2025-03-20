@@ -26,7 +26,7 @@ const CalendlyEmbed = () => {
     if (hasError) {
         return (
             <div style={{ padding: '1rem', textAlign: 'center', color: '#ff0000' }}>
-                Il widget Calendly non è stato caricato correttamente. Riprova più tardi o contatta l'assistenza.
+                Il widget Calendly non è stato caricato correttamente. Riprova più tardi o contatta l&apos;assistenza.
             </div>
         );
     }
