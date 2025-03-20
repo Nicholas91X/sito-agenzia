@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Toolbar, Box, useTheme, useMediaQuery } from '@mui/material';
 import { useRouter } from 'next/router';
 import { StyledAppBar, StyledMenuButton, StyledHamburgerButton } from './Navbar.styles';
