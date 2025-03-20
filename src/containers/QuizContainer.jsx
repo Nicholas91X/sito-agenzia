@@ -10,9 +10,7 @@ import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
 import { QuizResults } from '@/components/Quiz/QuizResults';
 import { QuestionCard } from '@/components/Quiz/QuestionCard';
 
-
-
-const QuizPage = () => {
+export default function QuizContainer() {
     const [questions, setQuestions] = useState([]);
     const [answers, setAnswers] = useState({});
     const [submitted, setSubmitted] = useState(false);
@@ -25,7 +23,9 @@ const QuizPage = () => {
     useAutoplayVideos([footerVideoRef]);
 
     useEffect(() => {
-        footerVideoRef.current.playbackRate = 0.5;
+        if (footerVideoRef.current) {
+            footerVideoRef.current.playbackRate = 0.5;
+        }
     }, []);
 
     // Blocca tentativi multipli tramite localStorage
@@ -62,8 +62,8 @@ const QuizPage = () => {
             body: JSON.stringify({ answers }),
         });
         const result = await res.json();
-        localStorage.setItem('score', result.score)
-        localStorage.setItem('total', (result.total * 3))
+        localStorage.setItem('score', result.score);
+        localStorage.setItem('total', result.total * 3);
         setOverallResult(result);
         setSubmitted(true);
         handleScrollTop();
@@ -93,18 +93,26 @@ const QuizPage = () => {
                         backgroundPosition: 'center',
                     }}
                 >
-                    <Container sx={{ p: 4, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
-                        <Typography variant="h4" sx={{ marginBottom: '2rem' }}>Hai già effettuato il quiz</Typography>
+                    <Container
+                        sx={{
+                            p: 4,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            color: '#fff',
+                        }}
+                    >
+                        <Typography variant="h4" sx={{ marginBottom: '2rem' }}>
+                            Hai già effettuato il quiz
+                        </Typography>
                         <Typography variant="h5">
                             Risultato: {localStorage.getItem('score')} / {localStorage.getItem('total')}
                         </Typography>
                     </Container>
                     <CalendlyEmbed />
                 </UnderVideoSection>
-                <VideoFooter
-                    videoRef={footerVideoRef}
-                    videoSrc="/assets/videos/loop.mp4"
-                />
+                <VideoFooter videoRef={footerVideoRef} videoSrc="/assets/videos/loop.mp4" />
             </>
         );
     }
@@ -122,10 +130,11 @@ const QuizPage = () => {
                         xl: '4rem 25rem',
                     },
                     backgroundColor: '#323738',
-                    color: '#fff'
+                    color: '#fff',
                 }}
             >
                 <Container sx={{ p: 4 }}>
+                    {/* Titolo di benvenuto */}
                     <Typography
                         variant="h3"
                         gutterBottom
@@ -137,11 +146,12 @@ const QuizPage = () => {
                                 md: '3.5rem',
                                 lg: '4.5rem',
                             },
-                            color: '#FAE5C8'
+                            color: '#FAE5C8',
                         }}
                     >
                         Benvenuto/a!
                     </Typography>
+                    {/* Descrizione del quiz */}
                     <Typography
                         variant="body2"
                         gutterBottom
@@ -172,7 +182,7 @@ const QuizPage = () => {
                                     fontFamily: 'Tan Pearl',
                                     mx: '0.5rem',
                                     verticalAlign: 'middle',
-                                    color: '#000'
+                                    color: '#000',
                                 }}
                             >
                                 5
@@ -181,14 +191,14 @@ const QuizPage = () => {
                         brevi domande per scoprire il livello della tua presenza digitale per far crescere il tuo business online.
                     </Typography>
 
-                    {/* Secondo blocco: variant h3 */}
+                    {/* Sezione Quiz: Domande e pulsanti */}
                     <Box
                         sx={{
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            paddingBottom: { xs: '2.5rem', sm: '2.5rem', lg: '5rem' }
+                            paddingBottom: { xs: '2.5rem', sm: '2.5rem', lg: '5rem' },
                         }}
                     >
                         <motion.div
@@ -203,6 +213,7 @@ const QuizPage = () => {
                             Quanto è forte la tua presenza online?
                         </Typography>
                     </Box>
+
                     {!submitted ? (
                         <>
                             {questions.map((q) => (
@@ -213,12 +224,7 @@ const QuizPage = () => {
                                 />
                             ))}
                             <Box sx={{ mt: 5, display: 'flex', justifyContent: 'flex-start', gap: 3 }}>
-                                <Button
-                                    variant="contained"
-                                    color="secondary"
-                                    onClick={handleSubmitQuiz}
-                                    size="large"
-                                >
+                                <Button variant="contained" color="secondary" onClick={handleSubmitQuiz} size="large">
                                     Invia
                                 </Button>
                                 <Button
@@ -233,19 +239,10 @@ const QuizPage = () => {
                             </Box>
                         </>
                     ) : (
-                        <QuizResults
-                            overallScore={overallResult.score}
-                            total={overallResult.total}
-                        />
+                        <QuizResults overallScore={overallResult.score} total={overallResult.total} />
                     )}
                 </Container>
             </UnderVideoSection>
-            <VideoFooter
-                videoRef={footerVideoRef}
-                videoSrc="/assets/videos/loop.mp4"
-            />
         </>
     );
-};
-
-export default QuizPage;
+}
