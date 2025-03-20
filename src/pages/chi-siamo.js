@@ -1,16 +1,21 @@
+import React, { useRef } from 'react';
 import ChiSiamoContainer from '@/containers/ChiSiamoContainer';
-import Head from 'next/head';
-import React from 'react';
+import SEO from '@/components/SEO/SEO';
+import Layout from '@/components/Layout/Layout';
 
 export default function ChiSiamo() {
+    const footerVideoRef = useRef(null);
+
     return (
         <>
-            <Head>
-                <title>Chi Siamo - Wide Studio Digitale</title>
-                <meta name="description" content="Sito vetrina" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
-            <ChiSiamoContainer />
+            <SEO
+                title="Chi Siamo - Wide Studio Digitale"
+                description="Scopri chi siamo: un gruppo di liberi professionisti che unisce competenza, passione e profonda conoscenza del territorio per creare lavori di eccellenza."
+                canonical="https://www.widestudiodigitale.it/chi-siamo"
+            />
+            <Layout footerVideoRef={footerVideoRef} videoSrc="/assets/videos/loop.mp4">
+                <ChiSiamoContainer />
+            </Layout>
         </>
     );
 }
