@@ -6,14 +6,21 @@ import WebIcon from '@mui/icons-material/Web';
 import PhotoVideoIcon from '@mui/icons-material/PhotoCamera';
 import ConsultIcon from '@mui/icons-material/SupportAgent';
 import Navbar from '@/components/Navbar/Navbar';
-import { BoxUnderRow, BoxUnderVideoSection, ChalkboardQuoteBox, CircleArrowHorizontal, UnderVideoSection, UnderVideoSectionNoPadding, VerticalLine } from '@/components/Commons/CommonsComponents';
+import {
+    BoxUnderRow,
+    BoxUnderVideoSection,
+    ChalkboardQuoteBox,
+    CircleArrowHorizontal,
+    UnderVideoSection,
+    UnderVideoSectionNoPadding,
+    VerticalLine
+} from '@/components/Commons/CommonsComponents';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import VideoHero from '@/components/VideoHero/VideoHero';
 import FaqSection from '@/components/FAQSection/FaqSection';
 import TimelineStep from '@/components/ServiceComponents/TimelineStep';
 import Link from 'next/link';
-
 
 const timelineSteps = [
     {
@@ -53,10 +60,8 @@ const timelineSteps = [
     },
 ];
 
-export default function ServicesTimeline() {
-
+export default function ServiziContainer() {
     const theme = useTheme();
-
     const mainVideoRef = useRef(null);
     const footerVideoRef = useRef(null);
 
@@ -78,137 +83,194 @@ export default function ServicesTimeline() {
 
     return (
         <>
+            {/* Navbar e sezione Hero */}
             <Navbar />
-            <VideoHero
-                videoRef={mainVideoRef}
-                videoSrc="/assets/videos/mockup.mp4"
-                titleText="Diamo visibilità al tuo lavoro"
-                onScrollDown={handleScrollDown}
-            />
+            <section>
+                <VideoHero
+                    videoRef={mainVideoRef}
+                    videoSrc="/assets/videos/mockup.mp4"
+                    titleText="Diamo visibilità al tuo lavoro"
+                    onScrollDown={handleScrollDown}
+                />
+            </section>
 
-            <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 6, textAlign: 'center', }}>
-                            Servizio All-inclusive
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Consapevoli che il marketing digitale richieda sia competenze tecniche sia tempo, offriamo una gestione chiavi in mano di tutto il processo.
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Delegare ogni fase ti fa risparmiare tempo e stress, offrendoti massima coerenza nella comunicazione del tuo brand.                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Con una regia unitaria, la tua attività ottiene maggiore visibilità e risultati tangibili.
-                        </Typography>
-                    </Box>
-                </Box>
-            </UnderVideoSection>
-
-            <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: '4rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
-                            Risultati Misurabili
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Il digital marketing non è più un costo, ma un investimento tracciabile.
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Con KPI chiari, report dettagliati e analisi precise, ti dimostriamo il valore di ogni euro investito.
-                        </Typography>
-                    </Box>
-                </Box>
-
-                {/* Box della citazione posizionato esattamente a metà */}
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '0',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: '90%',
-                        maxWidth: '500px',
-                        zIndex: 2,
-                    }}
+            {/* Sezione "Servizio All-inclusive" */}
+            <section>
+                <UnderVideoSection
+                    sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem' }}
                 >
-                    <ChalkboardQuoteBox elevation={0}>
-                        <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
-                            Non si tratta solo di essere online, ma di farlo nel modo giusto.
-                        </Typography>
-                    </ChalkboardQuoteBox>
-                </Box>
-            </UnderVideoSection>
-
-            <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '4rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
-                            Tecnologia Innovativa, Servizio Affidabile
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
-                            Il digitale evolve rapidamente, noi con lui. Ti offriamo soluzioni innovative e all&apos;avanguardia, frutto di costante aggiornamento e passione per il settore. Un team affidabile e competente al tuo fianco, per un futuro digitale solido e di successo.
-                        </Typography>
-                    </Box>
-                </Box>
-            </UnderVideoSection>
-
-            <UnderVideoSection sx={{
-                paddingTop: '10rem', paddingBottom: '4rem'
-            }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
-                    {/* Titolo principale */}
-                    <Box sx={{ marginBottom: { sm: '2rem', lg: '6rem' }, width: '100%' }}>
-                        <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
-                            Il Sentiero del Successo
-                        </Typography>
-                    </Box>
-                    <VerticalLine />
-                    {/* Linea verticale della timeline */}
-                    <Box sx={{ paddingTop: '6rem', position: 'relative', ml: '1rem', mb: 4, mt: { sm: 6, lg: 8 } }}>
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                left: '0',
-                                top: 60,
-                                bottom: 0,
-                                width: '4px',
-                                backgroundColor: theme.palette.secondary.third,
-                            }}
-                        />
-                        <Box>
-                            {timelineSteps.map((step, index) => (
-                                <TimelineStep key={index} step={step} />
-                            ))}
+                    <Box
+                        sx={{
+                            width: '90%',
+                            maxWidth: 1000,
+                            mx: 'auto',
+                            padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' },
+                        }}
+                    >
+                        <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
+                            <Typography variant="h3" sx={{ mb: 6, textAlign: 'center' }}>
+                                Servizio All-inclusive
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Consapevoli che il marketing digitale richieda sia competenze tecniche sia tempo, offriamo una gestione chiavi in mano di tutto il processo.
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Delegare ogni fase ti fa risparmiare tempo e stress, offrendoti massima coerenza nella comunicazione del tuo brand.
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Con una regia unitaria, la tua attività ottiene maggiore visibilità e risultati tangibili.
+                            </Typography>
                         </Box>
                     </Box>
-                </Box>
-                <BoxUnderVideoSection sx={{ marginTop: '5rem' }}>
-                    <BoxUnderRow>
-                        <Typography variant="h4" sx={{ textAlign: 'left', textDecoration: 'underline', lineHeight: '1.5rem' }}>
-                            PRENOTA UNA CONSULENZA GRATUITA
-                        </Typography>
-                        <Link href="/contatti/#consulenza" passHref>
-                            <CircleArrowHorizontal />
-                        </Link>
-                    </BoxUnderRow>
-                </BoxUnderVideoSection>
-            </UnderVideoSection>
+                </UnderVideoSection>
+            </section>
 
-            <UnderVideoSectionNoPadding sx={{ paddingTop: '10rem', backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', color: '#fff', paddingBottom: '8rem', }}>
-                <Box sx={{ width: '90%', mx: 'auto' }}>
-                    <Box sx={{ marginBottom: '2rem', width: '100%' }}>
-                        <Typography variant="h3" sx={{ mb: 8, textAlign: 'center', }}>
-                            Rispondiamo alle tue domande
-                        </Typography>
-                        <FaqSection />
+            {/* Sezione "Risultati Misurabili" con citazione */}
+            <section>
+                <UnderVideoSection
+                    sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: '4rem' }}
+                >
+                    <Box
+                        sx={{
+                            width: '90%',
+                            maxWidth: 1000,
+                            mx: 'auto',
+                            padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' },
+                        }}
+                    >
+                        <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
+                            <Typography variant="h3" sx={{ mb: 4, textAlign: 'center' }}>
+                                Risultati Misurabili
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Il digital marketing non è più un costo, ma un investimento tracciabile.
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Con KPI chiari, report dettagliati e analisi precise, ti dimostriamo il valore di ogni euro investito.
+                            </Typography>
+                        </Box>
                     </Box>
-                </Box>
-            </UnderVideoSectionNoPadding>
-            {/* Footer */}
-            < VideoFooter
-                videoRef={footerVideoRef}
-                videoSrc="/assets/videos/loop.mp4"
-            />
+
+                    {/* Citazione posizionata in overlay */}
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            top: '0',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            width: '90%',
+                            maxWidth: '500px',
+                            zIndex: 2,
+                        }}
+                    >
+                        <ChalkboardQuoteBox elevation={0}>
+                            <Typography variant="h5" sx={{ textAlign: 'center', lineHeight: '1.75rem' }}>
+                                Non si tratta solo di essere online, ma di farlo nel modo giusto.
+                            </Typography>
+                        </ChalkboardQuoteBox>
+                    </Box>
+                </UnderVideoSection>
+            </section>
+
+            {/* Sezione "Tecnologia Innovativa, Servizio Affidabile" */}
+            <section>
+                <UnderVideoSection
+                    sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '4rem' }}
+                >
+                    <Box
+                        sx={{
+                            width: '90%',
+                            maxWidth: 1000,
+                            mx: 'auto',
+                            padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' },
+                        }}
+                    >
+                        <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
+                            <Typography variant="h3" sx={{ mb: 4, textAlign: 'center' }}>
+                                Tecnologia Innovativa, Servizio Affidabile
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
+                                Il digitale evolve rapidamente, noi con lui. Ti offriamo soluzioni innovative e all&apos;avanguardia, frutto di costante aggiornamento e passione per il settore. Un team affidabile e competente al tuo fianco, per un futuro digitale solido e di successo.
+                            </Typography>
+                        </Box>
+                    </Box>
+                </UnderVideoSection>
+            </section>
+
+            {/* Sezione "Il Sentiero del Successo" */}
+            <section>
+                <UnderVideoSection sx={{ paddingTop: '10rem', paddingBottom: '4rem' }}>
+                    <Box
+                        sx={{
+                            width: '90%',
+                            maxWidth: 1000,
+                            mx: 'auto',
+                            padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' },
+                        }}
+                    >
+                        <Box sx={{ marginBottom: { sm: '2rem', lg: '6rem' }, width: '100%' }}>
+                            <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
+                                Il Sentiero del Successo
+                            </Typography>
+                        </Box>
+                        <VerticalLine />
+                        <Box sx={{ paddingTop: '6rem', position: 'relative', ml: '1rem', mb: 4, mt: { sm: 6, lg: 8 } }}>
+                            <Box
+                                sx={{
+                                    position: 'absolute',
+                                    left: '0',
+                                    top: 60,
+                                    bottom: 0,
+                                    width: '4px',
+                                    backgroundColor: theme.palette.secondary.third,
+                                }}
+                            />
+                            <Box>
+                                {timelineSteps.map((step, index) => (
+                                    <TimelineStep key={index} step={step} />
+                                ))}
+                            </Box>
+                        </Box>
+                    </Box>
+                    <BoxUnderVideoSection sx={{ marginTop: '5rem' }}>
+                        <BoxUnderRow>
+                            <Typography
+                                variant="h4"
+                                sx={{ textAlign: 'left', textDecoration: 'underline', lineHeight: '1.5rem' }}
+                            >
+                                PRENOTA UNA CONSULENZA GRATUITA
+                            </Typography>
+                            <Link href="/contatti/#consulenza" passHref>
+                                <CircleArrowHorizontal />
+                            </Link>
+                        </BoxUnderRow>
+                    </BoxUnderVideoSection>
+                </UnderVideoSection>
+            </section>
+
+            {/* Sezione FAQ */}
+            <section>
+                <UnderVideoSectionNoPadding
+                    sx={{
+                        paddingTop: '10rem',
+                        backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        color: '#fff',
+                        paddingBottom: '8rem',
+                    }}
+                >
+                    <Box sx={{ width: '90%', mx: 'auto' }}>
+                        <Box sx={{ marginBottom: '2rem', width: '100%' }}>
+                            <Typography variant="h3" sx={{ mb: 8, textAlign: 'center' }}>
+                                Rispondiamo alle tue domande
+                            </Typography>
+                            <FaqSection />
+                        </Box>
+                    </Box>
+                </UnderVideoSectionNoPadding>
+            </section>
         </>
     );
 }
