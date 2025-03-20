@@ -1,16 +1,21 @@
+import React, { useRef } from 'react';
 import ContattiContainer from '@/containers/ContattiContainer';
-import Head from 'next/head';
-import React from 'react';
+import SEO from '@/components/SEO/SEO';
+import Layout from '@/components/Layout/Layout';
 
 export default function Contatti() {
+    const footerVideoRef = useRef(null);
+
     return (
         <>
-            <Head>
-                <title>Contatti - Sito Wide Studio Digitale</title>
-                <meta name="description" content="Sito vetrina" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
-            <ContattiContainer />
+            <SEO
+                title="Contatti - Sito Wide Studio Digitale"
+                description="Contatta Wide Studio Digitale: scopri come possiamo far crescere la tua attività attraverso strategie digitali personalizzate."
+                canonical="https://www.widestudiodigitale.it/contatti"
+            />
+            <Layout footerVideoRef={footerVideoRef} videoSrc="/assets/videos/loop.mp4">
+                <ContattiContainer />
+            </Layout>
         </>
     );
 }
