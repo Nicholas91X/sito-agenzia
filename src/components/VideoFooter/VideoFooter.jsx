@@ -5,9 +5,8 @@ import {
     FooterOverlay,
     FooterContent,
 } from './VideoFooter.style';
-
-import SocialIcons from '../SocialIcons/SocialIcons';
 import { Typography } from '@mui/material';
+import SocialIcons from '../Socialicons/SocialIcons';
 
 /**
  * Footer con video di sfondo + overlay + social icons
