@@ -52,7 +52,7 @@ export const StyledLogoContainer = styled(Box)({
 });
 
 export const StyledLogoImage = styled("img")(({ theme }) => ({
-    width: "50%",
+    width: "35%",
     maxWidth: "200px",
     border: `1px solid ${theme.palette.secondary.main}`,
 }));

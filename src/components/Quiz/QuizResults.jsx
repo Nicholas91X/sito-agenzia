@@ -1,10 +1,10 @@
+import React, { forwardRef } from 'react';
 import { Paper, Typography } from '@mui/material';
 import Navbar from '../Navbar/Navbar';
 import { UnderVideoSection } from '../Commons/CommonsComponents';
 import dynamic from 'next/dynamic';
 
-export function QuizResults({ overallScore, total }) {
-    // Importa il componente in modalità client-only
+export const QuizResults = forwardRef(({ overallScore, total }, ref) => {
     const CalendlyEmbed = dynamic(
         () => import('../Calendly/CalendlyEmbed'),
         { ssr: false }
@@ -53,7 +53,7 @@ export function QuizResults({ overallScore, total }) {
                     marginBottom: '5rem',
                 }}
             >
-                <Paper elevation={3} sx={{ p: 2, mt: 2, backgroundColor: '#e8f4ff' }}>
+                <Paper ref={ref} elevation={3} sx={{ p: 2, mt: 2, backgroundColor: '#e8f4ff' }}>
                     <Typography variant="h5">
                         Risultato: {overallScore} / {maxScore}
                     </Typography>
@@ -68,4 +68,5 @@ export function QuizResults({ overallScore, total }) {
             <CalendlyEmbed style={{ minWidth: '200px' }} />
         </>
     );
-};
+}
+)

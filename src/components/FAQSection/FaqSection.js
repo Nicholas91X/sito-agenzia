@@ -44,8 +44,8 @@ const faqData = [
 
 // Componente riutilizzabile per ogni FAQ
 const FaqAccordion = ({ idx, question, answer, expanded, onChange }) => (
-    <Accordion expanded={expanded} onChange={onChange} sx={{ padding: { xs: '1rem', sm: '1.3rem', md: '2rem', lg: '2rem', xl: '2rem' }, backgroundColor: '#323738', marginBottom: { xs: '1.3rem', sm: '1.3rem', md: '4rem', lg: '4rem', xl: '4rem' }, border: '1px solid #fff' }}>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel-content" id="panel-header" sx={{ marginBottom: { xs: '1rem', sm: '1rem', md: '3rem', lg: '3rem', xl: '3rem' } }}>
+    <Accordion expanded={expanded} onChange={onChange} sx={{ padding: { xs: '0.5rem', sm: '0.75rem', md: '1rem', lg: '1rem', xl: '1rem' }, backgroundColor: '#323738', marginBottom: { xs: '1.3rem', sm: '1.3rem', md: '4rem', lg: '4rem', xl: '4rem' }, border: '1px solid #fff' }}>
+        <AccordionSummary onFocus={(event) => event.preventDefault()} aria-controls="panel-content" id="panel-header" sx={{ marginBottom: { xs: '1rem', sm: '1rem', md: '3rem', lg: '3rem', xl: '3rem' } }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
                 <Box sx={{ textAlign: 'center' }}>
                     <motion.span
@@ -103,7 +103,7 @@ const FaqSection = () => {
     };
 
     return (
-        <Box sx={{ mx: 'auto' }}>
+        <Box>
             {faqData.map((item, index) => (
                 <FaqAccordion
                     key={index}

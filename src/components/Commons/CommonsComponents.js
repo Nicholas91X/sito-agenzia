@@ -41,7 +41,15 @@ export const SectionText = styled(Typography)(({ theme }) => ({
 }));
 
 export const UnderVideoSection = styled(Box)(({ theme }) => ({
-    padding: '2rem 2rem 0 2rem',
+    padding: '2rem 1rem 0 1rem',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: theme.palette.background.white,
+}));
+
+export const UnderVideoSectionNoPadding = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

@@ -21,7 +21,7 @@ export function QuestionCard({ questionData, onAnswerSelect }) {
                 <motion.span
                     initial={{ x: 200, scale: 0, opacity: 0 }}
                     animate={{ x: 0, scale: 1, opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 1 }}
+                    transition={{ delay: 0.2, duration: 1 }}
                     style={{ display: 'inline-block', verticalAlign: 'middle', textAlign: 'center', marginBottom: '1rem' }}
                 >
                     <Box

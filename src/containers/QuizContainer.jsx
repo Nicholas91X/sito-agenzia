@@ -50,6 +50,10 @@ const QuizPage = () => {
         setAnswers((prev) => ({ ...prev, [questionId]: answer }));
     };
 
+    const handleScrollTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
+
     const handleSubmitQuiz = async () => {
         localStorage.setItem('hasTakenQuiz', 'true');
         const res = await fetch('/api/quiz', {
@@ -62,6 +66,7 @@ const QuizPage = () => {
         localStorage.setItem('total', (result.total * 3))
         setOverallResult(result);
         setSubmitted(true);
+        handleScrollTop();
     };
 
     const handleClear = () => {
@@ -94,7 +99,7 @@ const QuizPage = () => {
                             Risultato: {localStorage.getItem('score')} / {localStorage.getItem('total')}
                         </Typography>
                     </Container>
-                    <CalendlyEmbed style={{ minWidth: '200px' }} />
+                    <CalendlyEmbed />
                 </UnderVideoSection>
                 <VideoFooter
                     videoRef={footerVideoRef}
@@ -154,7 +159,7 @@ const QuizPage = () => {
                         <motion.span
                             initial={{ x: 200, scale: 0, opacity: 0 }}
                             animate={{ x: 0, scale: 1, opacity: 1 }}
-                            transition={{ delay: 1.5, duration: 1 }}
+                            transition={{ delay: 0.2, duration: 1 }}
                             style={{ display: 'inline-block', verticalAlign: 'middle' }}
                         >
                             <Box
@@ -189,7 +194,7 @@ const QuizPage = () => {
                         <motion.div
                             initial={{ x: -100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            transition={{ delay: 1, duration: 2 }}
+                            transition={{ delay: 0.2, duration: 2 }}
                             style={{ display: 'inline-block' }}
                         >
                             <HelpOutlineIcon sx={{ fontSize: '2.5rem', mb: 5, color: '#FAE5C8' }} />

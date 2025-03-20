@@ -6,12 +6,13 @@ import WebIcon from '@mui/icons-material/Web';
 import PhotoVideoIcon from '@mui/icons-material/PhotoCamera';
 import ConsultIcon from '@mui/icons-material/SupportAgent';
 import Navbar from '@/components/Navbar/Navbar';
-import { ChalkboardQuoteBox, UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
+import { BoxUnderRow, BoxUnderVideoSection, ChalkboardQuoteBox, CircleArrowHorizontal, UnderVideoSection, UnderVideoSectionNoPadding, VerticalLine } from '@/components/Commons/CommonsComponents';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import VideoHero from '@/components/VideoHero/VideoHero';
 import FaqSection from '@/components/FAQSection/FaqSection';
 import TimelineStep from '@/components/ServiceComponents/TimelineStep';
+import Link from 'next/link';
 
 
 const timelineSteps = [
@@ -86,8 +87,8 @@ export default function ServicesTimeline() {
             />
 
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 6, textAlign: 'center', }}>
                             Servizio All-inclusive
                         </Typography>
@@ -104,8 +105,8 @@ export default function ServicesTimeline() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: '4rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
                             Risultati Misurabili
                         </Typography>
@@ -139,8 +140,8 @@ export default function ServicesTimeline() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '4rem', }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center', }}>
                             Tecnologia Innovativa, Servizio Affidabile
                         </Typography>
@@ -154,7 +155,7 @@ export default function ServicesTimeline() {
             <UnderVideoSection sx={{
                 paddingTop: '10rem', paddingBottom: '4rem'
             }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 1.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 1rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 15rem' } }}>
                     {/* Titolo principale */}
                     <Box sx={{ marginBottom: { sm: '2rem', lg: '6rem' }, width: '100%' }}>
                         <Typography variant="h2" sx={{ mb: 4, textAlign: 'center' }}>
@@ -181,10 +182,20 @@ export default function ServicesTimeline() {
                         </Box>
                     </Box>
                 </Box>
+                <BoxUnderVideoSection sx={{ marginTop: '5rem' }}>
+                    <BoxUnderRow>
+                        <Typography variant="h4" sx={{ textAlign: 'left', textDecoration: 'underline', lineHeight: '1.5rem' }}>
+                            PRENOTA UNA CONSULENZA GRATUITA
+                        </Typography>
+                        <Link href="/contatti/#consulenza" passHref>
+                            <CircleArrowHorizontal />
+                        </Link>
+                    </BoxUnderRow>
+                </BoxUnderVideoSection>
             </UnderVideoSection>
 
-            <UnderVideoSection sx={{ paddingTop: '10rem', backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', color: '#fff', paddingBottom: '8rem', }}>
-                <Box sx={{ width: '90%', mx: 'auto', padding: { xs: '0 1rem', sm: '0 3rem', md: '0 7.5rem', lg: '0 7.5rem', xl: '0 7.5rem' } }}>
+            <UnderVideoSectionNoPadding sx={{ paddingTop: '10rem', backgroundImage: 'url("/assets/images/trama-definitiva-8-min.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', color: '#fff', paddingBottom: '8rem', }}>
+                <Box sx={{ width: '90%', mx: 'auto' }}>
                     <Box sx={{ marginBottom: '2rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 8, textAlign: 'center', }}>
                             Rispondiamo alle tue domande
@@ -192,7 +203,7 @@ export default function ServicesTimeline() {
                         <FaqSection />
                     </Box>
                 </Box>
-            </UnderVideoSection>
+            </UnderVideoSectionNoPadding>
             {/* Footer */}
             < VideoFooter
                 videoRef={footerVideoRef}

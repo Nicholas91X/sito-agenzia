@@ -82,8 +82,8 @@ export default function ContattiContainer() {
             />
 
             <UnderVideoSection sx={{ paddingTop: '8rem', backgroundColor: '#000', color: '#fff', paddingBottom: '8rem' }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
                         <Typography variant="h3" sx={{ mb: 4, textAlign: 'center' }}>
                             Conosciamoci
                         </Typography>
@@ -100,8 +100,8 @@ export default function ContattiContainer() {
             </UnderVideoSection>
 
             <UnderVideoSection sx={{ position: 'relative', paddingTop: '12rem', backgroundColor: '#fff', color: '#000', paddingBottom: { xs: '4rem', sm: '4rem', md: '4rem', lg: '8rem', xl: '8rem' } }}>
-                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', py: 4, padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
-                    <Box sx={{ marginBottom: '2rem', padding: '2rem', width: '100%' }}>
+                <Box sx={{ width: '90%', maxWidth: 1000, mx: 'auto', padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 5rem', xl: '0 10rem' } }}>
+                    <Box sx={{ marginBottom: '2rem', padding: '1rem', width: '100%' }}>
                         <Typography variant="body2" sx={{ mb: 4, textAlign: 'left' }}>
                             Se vuoi scoprire come possiamo aiutarti, scrivici o prenota una consulenza gratuita: insieme costruiremo una strategia efficace per la tua crescita.
                         </Typography>
@@ -181,6 +181,10 @@ export default function ContattiContainer() {
                             {socialLinks.map((item) => (
                                 <Box
                                     key={item.name}
+                                    component="a"
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     sx={{
                                         backgroundColor: '#1A1A1A',
                                         p: { xs: '1rem', sm: '1.5rem', md: '2rem' },
@@ -196,16 +200,11 @@ export default function ContattiContainer() {
                                         fontFamily: 'Tan Pearl',
                                         maxWidth: { xs: '250px', sm: '300px' },
                                         minWidth: '150px',
-                                        border: '1px solid white'
+                                        border: '1px solid white',
+                                        textDecoration: 'none' // per rimuovere la sottolineatura
                                     }}
                                 >
-                                    <IconButton
-                                        component="a"
-                                        href={item.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        sx={{ color: '#fff', mb: 1 }}
-                                    >
+                                    <IconButton sx={{ color: '#fff', mb: 1 }}>
                                         {item.icon}
                                     </IconButton>
                                     <Typography
@@ -214,6 +213,7 @@ export default function ContattiContainer() {
                                             fontWeight: 600,
                                             fontFamily: 'inherit',
                                             fontSize: { xs: '0.5rem', sm: '0.5rem', md: '0.5rem', lg: '0.8rem' },
+                                            color: '#fff'
                                         }}
                                     >
                                         {item.name}
@@ -273,6 +273,10 @@ export default function ContattiContainer() {
                             {phoneAndMail.map((item) => (
                                 <Box
                                     key={item.name}
+                                    component="a"
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     sx={{
                                         backgroundColor: 'secondary.main',
                                         p: { xs: '1rem', sm: '1.5rem', md: '2rem' },
@@ -288,16 +292,11 @@ export default function ContattiContainer() {
                                         fontFamily: 'Tan Pearl',
                                         maxWidth: { xs: '250px', sm: '300px' },
                                         minWidth: '150px',
-                                        border: '1px solid black'
+                                        border: '1px solid black',
+                                        textDecoration: 'none' // per rimuovere eventuali sottolineature
                                     }}
                                 >
-                                    <IconButton
-                                        component="a"
-                                        href={item.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        sx={{ color: '#fff', mb: 1 }}
-                                    >
+                                    <IconButton sx={{ color: '#fff', mb: 1 }}>
                                         {item.icon}
                                     </IconButton>
                                     <Typography
@@ -307,6 +306,7 @@ export default function ContattiContainer() {
                                             fontWeight: 600,
                                             fontFamily: 'inherit',
                                             fontSize: { xs: '0.5rem', sm: '0.5rem', md: '0.5rem', lg: '0.8rem' },
+                                            color: '#000'
                                         }}
                                     >
                                         {item.name}
@@ -351,7 +351,7 @@ export default function ContattiContainer() {
                         Prenota una call
                     </Typography>
                 </Box>
-                <CalendlyEmbed style={{ minWidth: '200px', padding: '10rem' }} />
+                <CalendlyEmbed />
                 {/* <MeetingLinkCard
                     imageSrc="/assets/images/logo.png"
                     title="Prenota una Riunione"
