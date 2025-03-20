@@ -31,7 +31,7 @@ export default function ChiSiamoContainer() {
 
             {/* Corpo della pagina */}
             <UnderVideoSection sx={{ paddingBottom: '25rem', backgroundImage: "url('/assets/images/trama-definitiva-4-min.png')" }}>
-                <BoxUnderVideoSection sx={{ padding: { xs: '0 1rem', sm: '0 2.5rem', md: '0 7.5rem', lg: '0 2.5rem', xl: '0 7.5rem' } }}>
+                <BoxUnderVideoSection sx={{ padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 20rem' } }}>
                     <SectionTitle sx={{ paddingTop: { xs: '5rem' } }}>Chi Siamo</SectionTitle>
                     <SectionText sx={{ textAlign: 'left', color: '#000', width: '100%' }}>Non siamo un’agenzia tradizionale, ma un <strong>gruppo di liberi professionisti</strong> che ha scelto di collaborare in un contesto di piena responsabilità individuale e reputazione personale.</SectionText>
                     <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: '#000', width: '100%' }}>Il nostro modello di lavoro ci permette di rispondere in prima persona a ogni esigenza: ogni progetto è curato con la massima attenzione, perché ogni professionista porta avanti il proprio impegno e la propria reputazione.</SectionText>
@@ -68,7 +68,7 @@ export default function ChiSiamoContainer() {
 
 
             <UnderVideoSection sx={{ paddingBottom: '10rem', backgroundColor: '#000', paddingTop: '20rem' }}>
-                <BoxUnderVideoSection sx={{ padding: { xs: '0 1rem', sm: '0 2.5rem', md: '0 7.5rem', lg: '0 2.5rem', xl: '0 7.5rem' } }}>
+                <BoxUnderVideoSection sx={{ padding: { xs: '0 0.5rem', sm: '0 3rem', md: '0 10rem', lg: '0 10rem', xl: '0 20rem' } }}>
                     <SectionTitle sx={{ paddingTop: { xs: '2rem' }, color: '#fff' }}>Cosa ci differenzia</SectionTitle>
                     <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: 'white', width: '100%' }} variant='body2'>Preferiamo concentrarci su <strong>pochi, selezionati clienti</strong>, anziché puntare alla quantità.</SectionText>
                     <SectionText sx={{ marginTop: '1rem', textAlign: 'left', color: 'white', width: '100%' }} variant='body2'>In questo modo, possiamo dedicare il giusto tempo e le risorse necessarie per <strong>garantire risultati che rispecchino le aspettative</strong> e la fiducia dei nostri partner.</SectionText>
