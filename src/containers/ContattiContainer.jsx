@@ -5,7 +5,7 @@ import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import { useTheme } from '@emotion/react';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
 import VideoHero from '@/components/VideoHero/VideoHero';
-import { UnderVideoSection } from '@/components/Commons/CommonsComponents';
+import { ChalkboardQuoteBox, UnderVideoSection } from '@/components/Commons/CommonsComponents';
 import { Box, IconButton, Typography, TextField, Button } from '@mui/material';
 
 // Icone MUI
@@ -15,7 +15,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import CalendlyEmbed from '@/components/Calendly/CalendlyEmbed';
-import { ChalkboardQuoteBox, QuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
 import MeetingLinkCard from '@/components/Doodle/MeetinglinkCard';
 
 export default function ContattiContainer() {
@@ -325,7 +324,7 @@ export default function ContattiContainer() {
             </UnderVideoSection>
 
             {/* TERZO BLOCCO: CALENDLY */}
-            <UnderVideoSection sx={{
+            <UnderVideoSection id="consulenza" sx={{
                 paddingTop: '8rem',
                 paddingBottom: '8rem',
                 color: '#fff',

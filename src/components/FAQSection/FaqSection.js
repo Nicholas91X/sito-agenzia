@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { SectionText } from '../VideoContainer/VideoContainer.styles';
-import { VerticalLine } from '../Commons/CommonsComponents';
+import { SectionText, VerticalLine } from '../Commons/CommonsComponents';
 import { motion } from 'framer-motion';
 
 const faqData = [

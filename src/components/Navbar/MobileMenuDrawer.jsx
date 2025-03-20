@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { StyledBox, StyledButton, StyledDrawer, StyledLogoContainer, StyledLogoImage } from './MobileMenudrawer.styles';
+import { StyledBoxMobile, StyledButton, StyledDrawer, StyledLogoContainer, StyledLogoImage } from './MobileMenudrawer.styles';
 import { Box } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -20,7 +20,7 @@ export default function MobileMenuDrawer({ open, onClose, menuItems, activeMenu,
             </StyledLogoContainer>
 
             {/* Menu Items */}
-            <StyledBox>
+            <StyledBoxMobile>
                 {menuItems.map((item) => (
                     <StyledButton
                         key={item.name}
@@ -34,7 +34,7 @@ export default function MobileMenuDrawer({ open, onClose, menuItems, activeMenu,
                         {item.name}
                     </StyledButton>
                 ))}
-            </StyledBox>
+            </StyledBoxMobile>
 
             {/* SOCIAL ICONS */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0.1, sm: 0.5 } }}>

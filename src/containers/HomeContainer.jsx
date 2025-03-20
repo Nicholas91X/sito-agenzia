@@ -106,7 +106,7 @@ export default function HomeContainer() {
                         <Typography variant="h4" sx={{ textDecoration: 'underline', lineHeight: '1.5rem' }}>
                             PRENOTA UNA CONSULENZA GRATUITA
                         </Typography>
-                        <Link href="/contatti" passHref>
+                        <Link href="/contatti/#consulenza" passHref>
                             <CircleArrowHorizontal />
                         </Link>
                     </BoxUnderRow>

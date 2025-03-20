@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Paper, Typography, RadioGroup, FormControlLabel, Radio, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 
-const QuestionCard = ({ questionData, onAnswerSelect }) => {
+export function QuestionCard({ questionData, onAnswerSelect }) {
     const [selectedOption, setSelectedOption] = useState(null);
 
     const handleOptionChange = (event) => {
@@ -70,5 +70,3 @@ const QuestionCard = ({ questionData, onAnswerSelect }) => {
         </Paper>
     );
 };
-
-export default QuestionCard;

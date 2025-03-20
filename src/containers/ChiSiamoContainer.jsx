@@ -2,13 +2,13 @@ import React, { useRef, useEffect } from 'react';
 import useAutoplayVideos from '../hooks/useAutoplayVideos';
 import VideoFooter from '../components/VideoFooter/VideoFooter';
 import Navbar from '@/components/Navbar/Navbar';
-import { BoxUnderVideoSection, UnderVideoSection } from '@/components/Commons/CommonsComponents';
-import { SectionText, SectionTitle } from '@/components/VideoContainer/VideoContainer.styles';
-import { Box } from '@mui/material';
+import { BoxUnderRow, BoxUnderVideoSection, CircleArrowHorizontal, SectionText, SectionTitle, UnderVideoSection } from '@/components/Commons/CommonsComponents';
+import { Box, Typography } from '@mui/material';
 import InsightsIcon from '@mui/icons-material/Insights';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import HandShakeIcon from '@mui/icons-material/HandShake';
+import Link from 'next/link';
 
 export default function ChiSiamoContainer() {
     const mainVideoRef = useRef(null);
@@ -79,7 +79,7 @@ export default function ChiSiamoContainer() {
             </UnderVideoSection>
             {/* Grid con 4 colonne: su schermi piccoli le Box vanno in colonna, su md in 2 colonne e già in lg disponibili 2 a 2 */}
             <UnderVideoSection sx={{
-                padding: {xs: '2.5rem 2.5rem 10rem 2.5rem', sm: '2.5rem 2.5rem 10rem 2.5rem', lg: '7.5rem 2.5rem 10rem 2.5rem', xl: '7.5rem 2.5rem 10rem 2.5rem' }
+                padding: { xs: '2.5rem 2.5rem 10rem 2.5rem', sm: '2.5rem 2.5rem 10rem 2.5rem', lg: '7.5rem 2.5rem 10rem 2.5rem', xl: '7.5rem 2.5rem 10rem 2.5rem' }
             }}>
                 <BoxUnderVideoSection
                     sx={{
@@ -129,6 +129,16 @@ export default function ChiSiamoContainer() {
                             Noi gestiamo tutto, dal digital marketing alla creazione di contenuti, orientando strategie studiate per creare le condizioni ideali per la crescita del tuo business.
                         </SectionText>
                     </Box>
+                </BoxUnderVideoSection>
+                <BoxUnderVideoSection sx={{ marginTop: '5rem' }}>
+                    <BoxUnderRow>
+                        <Typography variant="h4" sx={{ textAlign: 'left', textDecoration: 'underline', lineHeight: '1.5rem' }}>
+                            PRENOTA UNA CONSULENZA GRATUITA
+                        </Typography>
+                        <Link href="/contatti/#consulenza" passHref>
+                            <CircleArrowHorizontal />
+                        </Link>
+                    </BoxUnderRow>
                 </BoxUnderVideoSection>
             </UnderVideoSection>
             {/* Footer */}

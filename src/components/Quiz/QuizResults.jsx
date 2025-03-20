@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import { UnderVideoSection } from '../Commons/CommonsComponents';
 import dynamic from 'next/dynamic';
 
-const QuizResults = ({ overallScore, total }) => {
+export function QuizResults({ overallScore, total }) {
     // Importa il componente in modalità client-only
     const CalendlyEmbed = dynamic(
         () => import('../Calendly/CalendlyEmbed'),
@@ -70,5 +70,3 @@ const QuizResults = ({ overallScore, total }) => {
         </>
     );
 };
-
-export default QuizResults;

@@ -6,13 +6,12 @@ import WebIcon from '@mui/icons-material/Web';
 import PhotoVideoIcon from '@mui/icons-material/PhotoCamera';
 import ConsultIcon from '@mui/icons-material/SupportAgent';
 import Navbar from '@/components/Navbar/Navbar';
-import { UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
+import { ChalkboardQuoteBox, UnderVideoSection, VerticalLine } from '@/components/Commons/CommonsComponents';
 import VideoFooter from '@/components/VideoFooter/VideoFooter';
 import useAutoplayVideos from '@/hooks/useAutoplayVideos';
-import TimelineStep from '@/components/VideoContainer/TimelineStep';
 import VideoHero from '@/components/VideoHero/VideoHero';
-import { ChalkboardQuoteBox } from '@/components/VideoContainer/VideoContainer.styles';
 import FaqSection from '@/components/FAQSection/FaqSection';
+import TimelineStep from '@/components/ServiceComponents/TimelineStep';
 
 
 const timelineSteps = [

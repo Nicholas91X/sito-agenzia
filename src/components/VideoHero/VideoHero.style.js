@@ -81,6 +81,7 @@ export const StyledH1 = styled(Typography)(({ theme }) => ({
     color: theme.palette.secondary.main,
     top: '17.5%',
     opacity: '0.75',
+    textShadow: '3px 3px 10px rgba(0, 0, 0, 1)',
     '@media screen and (max-width:768px)': {
         fontSize: '1.15rem'
     },

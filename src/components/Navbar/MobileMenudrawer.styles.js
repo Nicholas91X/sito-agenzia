@@ -34,7 +34,7 @@ export const StyledButton = styled(Button)(({ theme, active }) => ({
     }),
 }));
 
-export const StyledBox = styled(Box)(({ theme }) => ({
+export const StyledBoxMobile = styled(Box)(({ theme }) => ({
     width: '100%',
     padding: 3,
     display: 'flex',
