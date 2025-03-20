@@ -7,7 +7,7 @@ import { Box, Typography } from '@mui/material';
 import InsightsIcon from '@mui/icons-material/Insights';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import HandShakeIcon from '@mui/icons-material/HandShake';
+import Handshake from '@mui/icons-material/Handshake';
 import Link from 'next/link';
 
 export default function ChiSiamoContainer() {
@@ -119,7 +119,7 @@ export default function ChiSiamoContainer() {
                         </SectionText>
                     </Box>
                     <Box>
-                        <HandShakeIcon sx={{ fontSize: '3rem', color: 'secondary.fourth', mb: 2 }} />
+                        <Handshake sx={{ fontSize: '3rem', color: 'secondary.fourth', mb: 2 }} />
                         <SectionTitle variant="h2" sx={{ textAlign: 'left', paddingTop: { xs: '2rem' }, lineHeight: '3rem' }}>
                             Soluzioni Chiavi in Mano
                         </SectionTitle>
