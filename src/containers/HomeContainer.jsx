@@ -85,7 +85,7 @@ export default function HomeContainer() {
                             lg: '0 5rem 5rem 5rem',
                             xl: '0 10rem',
                         },
-                        backgroundImage: "url('/assets/images/trama-definitiva-6-min.png')",
+                        backgroundImage: "url('/assets/images/trama-definitiva-4-min.png')",
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
