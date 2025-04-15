@@ -28,7 +28,6 @@ export default function VideoHero({
                 <source src={videoSrc} type="video/mp4" />
                 Il tuo browser non supporta i video.
             </StyledVideo>
-            <StyledH1 variant="h1">{titleText}</StyledH1>
 
             {/* ScrollIndicator in basso */}
             {onScrollDown && <ScrollIndicator onClick={onScrollDown} />}
